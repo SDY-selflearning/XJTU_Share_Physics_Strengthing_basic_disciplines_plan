@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Apr 13 23:09:11 2024
+# Process ID: 2188
+# Current directory: D:/my_homework/my_vivado_practice/project_practice_week8_on_class/second_pulse_generator/second_pulse_generator.runs/synth_1
+# Command line: vivado.exe -log second_pulse_generator.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source second_pulse_generator.tcl
+# Log file: D:/my_homework/my_vivado_practice/project_practice_week8_on_class/second_pulse_generator/second_pulse_generator.runs/synth_1/second_pulse_generator.vds
+# Journal file: D:/my_homework/my_vivado_practice/project_practice_week8_on_class/second_pulse_generator/second_pulse_generator.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source second_pulse_generator.tcl -notrace

@@ -1,0 +1,211 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed May  1 15:59:14 2024
+# Process ID: 21884
+# Current directory: D:/my_homework/my_vivado_practice/project_practice_week9_on_class/FSM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4308 D:\my_homework\my_vivado_practice\project_practice_week9_on_class\FSM\FSM.xpr
+# Log file: D:/my_homework/my_vivado_practice/project_practice_week9_on_class/FSM/vivado.log
+# Journal file: D:/my_homework/my_vivado_practice/project_practice_week9_on_class/FSM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/my_homework/my_vivado_practice/project_practice_week9_on_class/FSM/FSM.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 742.215 ; gain = 129.543
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcsg324-1
+Top: top_sec_cnt
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 862.594 ; gain = 92.855
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_sec_cnt' [D:/my_homework/my_vivado_practice/project_practice_week9_on_class/FSM/FSM.srcs/sources_1/new/top_sec_cnt.v:23]
+INFO: [Synth 8-6157] synthesizing module 'get_key' [D:/my_homework/my_vivado_practice/project_practice_week9_on_class/FSM/FSM.srcs/sources_1/new/get_key.v:23]
+INFO: [Synth 8-6157] synthesizing module 'key_debounce' [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/sources_1/new/key_debounce.v:23]
+	Parameter DELAY_YIME bound to: 21'b101101110001101100000 
+WARNING: [Synth 8-6014] Unused sequential element key_value_reg was removed.  [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/sources_1/new/key_debounce.v:50]
+WARNING: [Synth 8-6014] Unused sequential element key_n_flag_reg was removed.  [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/sources_1/new/key_debounce.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'key_debounce' (1#1) [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/sources_1/new/key_debounce.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'get_key' (2#1) [D:/my_homework/my_vivado_practice/project_practice_week9_on_class/FSM/FSM.srcs/sources_1/new/get_key.v:23]
+INFO: [Synth 8-6157] synthesizing module 'FSM' [D:/my_homework/my_vivado_practice/project_practice_week9_on_class/FSM/FSM.srcs/sources_1/new/FSM.v:23]
+	Parameter WORK_INIT bound to: 2'b00 
+	Parameter COUNT bound to: 2'b01 
+	Parameter PAUSE bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'FSM' (3#1) [D:/my_homework/my_vivado_practice/project_practice_week9_on_class/FSM/FSM.srcs/sources_1/new/FSM.v:23]
+INFO: [Synth 8-6157] synthesizing module 'cntdown' [D:/my_homework/my_vivado_practice/project_practice_week9_on_class/FSM/FSM.srcs/sources_1/new/cntdown.v:23]
+INFO: [Synth 8-6157] synthesizing module 'sec_pulse' [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/sources_1/new/sec_pule.v:23]
+	Parameter period bound to: 100000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sec_pulse' (4#1) [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/sources_1/new/sec_pule.v:23]
+INFO: [Synth 8-6157] synthesizing module 'cnt60' [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/sources_1/new/cnt60.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'cnt60' (5#1) [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/sources_1/new/cnt60.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'cntdown' (6#1) [D:/my_homework/my_vivado_practice/project_practice_week9_on_class/FSM/FSM.srcs/sources_1/new/cntdown.v:23]
+INFO: [Synth 8-6157] synthesizing module 'show' [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/sources_1/new/show.v:23]
+INFO: [Synth 8-226] default block is never used [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/sources_1/new/show.v:111]
+INFO: [Synth 8-6155] done synthesizing module 'show' (7#1) [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/sources_1/new/show.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top_sec_cnt' (8#1) [D:/my_homework/my_vivado_practice/project_practice_week9_on_class/FSM/FSM.srcs/sources_1/new/top_sec_cnt.v:23]
+WARNING: [Synth 8-3331] design show has unconnected port x[15]
+WARNING: [Synth 8-3331] design show has unconnected port x[14]
+WARNING: [Synth 8-3331] design show has unconnected port x[13]
+WARNING: [Synth 8-3331] design show has unconnected port x[12]
+WARNING: [Synth 8-3331] design show has unconnected port x[11]
+WARNING: [Synth 8-3331] design show has unconnected port x[10]
+WARNING: [Synth 8-3331] design show has unconnected port x[9]
+WARNING: [Synth 8-3331] design show has unconnected port x[8]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 905.699 ; gain = 135.961
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 905.699 ; gain = 135.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 905.699 ; gain = 135.961
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/constrs_1/new/BCD_cnt60_digit.xdc]
+WARNING: [Vivado 12-584] No ports matched 'x[7]'. [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/constrs_1/new/BCD_cnt60_digit.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/constrs_1/new/BCD_cnt60_digit.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'x[6]'. [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/constrs_1/new/BCD_cnt60_digit.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/constrs_1/new/BCD_cnt60_digit.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'x[5]'. [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/constrs_1/new/BCD_cnt60_digit.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/constrs_1/new/BCD_cnt60_digit.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'x[4]'. [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/constrs_1/new/BCD_cnt60_digit.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/constrs_1/new/BCD_cnt60_digit.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'x[3]'. [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/constrs_1/new/BCD_cnt60_digit.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/constrs_1/new/BCD_cnt60_digit.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'x[2]'. [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/constrs_1/new/BCD_cnt60_digit.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/constrs_1/new/BCD_cnt60_digit.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'x[1]'. [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/constrs_1/new/BCD_cnt60_digit.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/constrs_1/new/BCD_cnt60_digit.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'x[0]'. [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/constrs_1/new/BCD_cnt60_digit.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/constrs_1/new/BCD_cnt60_digit.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/constrs_1/new/BCD_cnt60_digit.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1198.242 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1207.840 ; gain = 438.102
+21 Infos, 18 Warnings, 8 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1207.840 ; gain = 438.102
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/constrs_1/new/BCD_cnt60_digit.xdc]
+Finished Parsing XDC File [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/constrs_1/new/BCD_cnt60_digit.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1274.141 ; gain = 52.043
+close_design
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcsg324-1
+Top: top_sec_cnt
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1318.684 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_sec_cnt' [D:/my_homework/my_vivado_practice/project_practice_week9_on_class/FSM/FSM.srcs/sources_1/new/top_sec_cnt.v:23]
+INFO: [Synth 8-6157] synthesizing module 'get_key' [D:/my_homework/my_vivado_practice/project_practice_week9_on_class/FSM/FSM.srcs/sources_1/new/get_key.v:23]
+INFO: [Synth 8-6157] synthesizing module 'key_debounce' [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/sources_1/new/key_debounce.v:23]
+	Parameter DELAY_YIME bound to: 21'b101101110001101100000 
+WARNING: [Synth 8-6014] Unused sequential element key_value_reg was removed.  [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/sources_1/new/key_debounce.v:50]
+WARNING: [Synth 8-6014] Unused sequential element key_n_flag_reg was removed.  [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/sources_1/new/key_debounce.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'key_debounce' (1#1) [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/sources_1/new/key_debounce.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'get_key' (2#1) [D:/my_homework/my_vivado_practice/project_practice_week9_on_class/FSM/FSM.srcs/sources_1/new/get_key.v:23]
+INFO: [Synth 8-6157] synthesizing module 'FSM' [D:/my_homework/my_vivado_practice/project_practice_week9_on_class/FSM/FSM.srcs/sources_1/new/FSM.v:23]
+	Parameter WORK_INIT bound to: 2'b00 
+	Parameter COUNT bound to: 2'b01 
+	Parameter PAUSE bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'FSM' (3#1) [D:/my_homework/my_vivado_practice/project_practice_week9_on_class/FSM/FSM.srcs/sources_1/new/FSM.v:23]
+INFO: [Synth 8-6157] synthesizing module 'cntdown' [D:/my_homework/my_vivado_practice/project_practice_week9_on_class/FSM/FSM.srcs/sources_1/new/cntdown.v:23]
+INFO: [Synth 8-6157] synthesizing module 'sec_pulse' [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/sources_1/new/sec_pule.v:23]
+	Parameter period bound to: 100000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sec_pulse' (4#1) [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/sources_1/new/sec_pule.v:23]
+INFO: [Synth 8-6157] synthesizing module 'cnt60' [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/sources_1/new/cnt60.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'cnt60' (5#1) [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/sources_1/new/cnt60.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'cntdown' (6#1) [D:/my_homework/my_vivado_practice/project_practice_week9_on_class/FSM/FSM.srcs/sources_1/new/cntdown.v:23]
+INFO: [Synth 8-6157] synthesizing module 'show' [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/sources_1/new/show.v:23]
+INFO: [Synth 8-226] default block is never used [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/sources_1/new/show.v:111]
+INFO: [Synth 8-6155] done synthesizing module 'show' (7#1) [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/sources_1/new/show.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top_sec_cnt' (8#1) [D:/my_homework/my_vivado_practice/project_practice_week9_on_class/FSM/FSM.srcs/sources_1/new/top_sec_cnt.v:23]
+WARNING: [Synth 8-3331] design show has unconnected port x[15]
+WARNING: [Synth 8-3331] design show has unconnected port x[14]
+WARNING: [Synth 8-3331] design show has unconnected port x[13]
+WARNING: [Synth 8-3331] design show has unconnected port x[12]
+WARNING: [Synth 8-3331] design show has unconnected port x[11]
+WARNING: [Synth 8-3331] design show has unconnected port x[10]
+WARNING: [Synth 8-3331] design show has unconnected port x[9]
+WARNING: [Synth 8-3331] design show has unconnected port x[8]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1318.684 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1318.684 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1318.684 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/constrs_1/new/BCD_cnt60_digit.xdc]
+Finished Parsing XDC File [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/constrs_1/new/BCD_cnt60_digit.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1361.656 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1361.656 ; gain = 42.973
+20 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1361.656 ; gain = 42.973
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed May  1 16:07:41 2024...

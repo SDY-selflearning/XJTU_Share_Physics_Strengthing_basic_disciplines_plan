@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../project_practice_week6_on_class.srcs/sources_1/new/and_or_not.v" \
+"../../../../project_practice_week6_on_class.srcs/sim_1/new/sim_and_or_not.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

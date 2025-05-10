@@ -1,0 +1,683 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon May 13 10:22:19 2024
+# Process ID: 27620
+# Current directory: D:/my_homework/my_vivado_practice/DAC0832/DAC0832
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24392 D:\my_homework\my_vivado_practice\DAC0832\DAC0832\DAC0832.xpr
+# Log file: D:/my_homework/my_vivado_practice/DAC0832/DAC0832/vivado.log
+# Journal file: D:/my_homework/my_vivado_practice/DAC0832/DAC0832\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 704.730 ; gain = 97.969
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon May 13 10:23:36 2024] Launched synth_1...
+Run output will be captured here: D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.runs/synth_1/runme.log
+[Mon May 13 10:23:36 2024] Launched impl_1...
+Run output will be captured here: D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.runs/impl_1/top_DAC0832.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcsg324-1
+Top: top_DAC0832
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1827.844 ; gain = 35.496
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_DAC0832' [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/top_DAC0832.v:23]
+WARNING: [Synth 8-6104] Input port 'ILE' has an internal driver [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/top_DAC0832.v:34]
+WARNING: [Synth 8-6104] Input port 'CS_n' has an internal driver [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/top_DAC0832.v:35]
+WARNING: [Synth 8-6104] Input port 'WR1_n' has an internal driver [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/top_DAC0832.v:36]
+WARNING: [Synth 8-6104] Input port 'WR2_n' has an internal driver [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/top_DAC0832.v:37]
+WARNING: [Synth 8-6104] Input port 'XFER_n' has an internal driver [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/top_DAC0832.v:38]
+INFO: [Synth 8-6157] synthesizing module 'key_debounce' [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/key_debounce.v:23]
+	Parameter DELAY_YIME bound to: 21'b101101110001101100000 
+WARNING: [Synth 8-6014] Unused sequential element key_value_reg was removed.  [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/key_debounce.v:50]
+WARNING: [Synth 8-6014] Unused sequential element key_n_flag_reg was removed.  [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/key_debounce.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'key_debounce' (1#1) [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/key_debounce.v:23]
+INFO: [Synth 8-6157] synthesizing module 'FSM' [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/FSM.v:23]
+	Parameter SQU bound to: 2'b00 
+	Parameter SIN bound to: 2'b01 
+	Parameter TRI bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'FSM' (2#1) [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/FSM.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pulse' [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/pulse.v:23]
+	Parameter total bound to: 100000000 - type: integer 
+	Parameter frequence bound to: 1 - type: integer 
+	Parameter sam_freq bound to: 256 - type: integer 
+	Parameter period bound to: 390625 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'pulse' (3#1) [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/pulse.v:23]
+INFO: [Synth 8-6157] synthesizing module 'wave' [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/wave.v:23]
+INFO: [Synth 8-6157] synthesizing module 'square_wave' [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/square_wave.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'square_wave' (4#1) [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/square_wave.v:23]
+INFO: [Synth 8-6157] synthesizing module 'sine_wave' [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/sin_wave.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dist_mem_gen_0' [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/.Xil/Vivado-27620-LAPTOP-CCNJK6NK/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dist_mem_gen_0' (5#1) [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/.Xil/Vivado-27620-LAPTOP-CCNJK6NK/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'sine_wave' (6#1) [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/sin_wave.v:23]
+INFO: [Synth 8-6157] synthesizing module 'triangle_wave' [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/triangle_wave.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'triangle_wave' (7#1) [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/triangle_wave.v:23]
+INFO: [Synth 8-6157] synthesizing module 'select_wave' [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/select_wave.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'select_wave' (8#1) [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/select_wave.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'wave' (9#1) [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/wave.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top_DAC0832' (10#1) [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/top_DAC0832.v:23]
+WARNING: [Synth 8-3331] design top_DAC0832 has unconnected port ILE
+WARNING: [Synth 8-3331] design top_DAC0832 has unconnected port CS_n
+WARNING: [Synth 8-3331] design top_DAC0832 has unconnected port WR1_n
+WARNING: [Synth 8-3331] design top_DAC0832 has unconnected port WR2_n
+WARNING: [Synth 8-3331] design top_DAC0832 has unconnected port XFER_n
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1873.391 ; gain = 81.043
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1873.391 ; gain = 81.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1873.391 ; gain = 81.043
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.dcp' for cell 'uut_wave/uut_sine_wave/u_sin_wave'
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/constrs_1/new/DAC0832.xdc]
+Finished Parsing XDC File [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/constrs_1/new/DAC0832.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2193.984 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:28 ; elapsed = 00:00:27 . Memory (MB): peak = 2247.008 ; gain = 454.660
+29 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:27 . Memory (MB): peak = 2247.008 ; gain = 454.660
+set_property PULLTYPE PULLDOWN [get_ports [list CS_n]]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.runs/impl_1/top_DAC0832.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+close_design
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcsg324-1
+Top: top_DAC0832
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2267.418 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_DAC0832' [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/top_DAC0832.v:23]
+WARNING: [Synth 8-6104] Input port 'ILE' has an internal driver [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/top_DAC0832.v:34]
+WARNING: [Synth 8-6104] Input port 'CS_n' has an internal driver [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/top_DAC0832.v:35]
+WARNING: [Synth 8-6104] Input port 'WR1_n' has an internal driver [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/top_DAC0832.v:36]
+WARNING: [Synth 8-6104] Input port 'WR2_n' has an internal driver [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/top_DAC0832.v:37]
+WARNING: [Synth 8-6104] Input port 'XFER_n' has an internal driver [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/top_DAC0832.v:38]
+INFO: [Synth 8-6157] synthesizing module 'key_debounce' [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/key_debounce.v:23]
+	Parameter DELAY_YIME bound to: 21'b101101110001101100000 
+WARNING: [Synth 8-6014] Unused sequential element key_value_reg was removed.  [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/key_debounce.v:50]
+WARNING: [Synth 8-6014] Unused sequential element key_n_flag_reg was removed.  [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/key_debounce.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'key_debounce' (1#1) [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/key_debounce.v:23]
+INFO: [Synth 8-6157] synthesizing module 'FSM' [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/FSM.v:23]
+	Parameter SQU bound to: 2'b00 
+	Parameter SIN bound to: 2'b01 
+	Parameter TRI bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'FSM' (2#1) [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/FSM.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pulse' [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/pulse.v:23]
+	Parameter total bound to: 100000000 - type: integer 
+	Parameter frequence bound to: 1 - type: integer 
+	Parameter sam_freq bound to: 256 - type: integer 
+	Parameter period bound to: 390625 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'pulse' (3#1) [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/pulse.v:23]
+INFO: [Synth 8-6157] synthesizing module 'wave' [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/wave.v:23]
+INFO: [Synth 8-6157] synthesizing module 'square_wave' [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/square_wave.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'square_wave' (4#1) [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/square_wave.v:23]
+INFO: [Synth 8-6157] synthesizing module 'sine_wave' [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/sin_wave.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dist_mem_gen_0' [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/.Xil/Vivado-27620-LAPTOP-CCNJK6NK/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dist_mem_gen_0' (5#1) [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/.Xil/Vivado-27620-LAPTOP-CCNJK6NK/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'sine_wave' (6#1) [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/sin_wave.v:23]
+INFO: [Synth 8-6157] synthesizing module 'triangle_wave' [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/triangle_wave.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'triangle_wave' (7#1) [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/triangle_wave.v:23]
+INFO: [Synth 8-6157] synthesizing module 'select_wave' [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/select_wave.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'select_wave' (8#1) [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/select_wave.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'wave' (9#1) [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/wave.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top_DAC0832' (10#1) [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/top_DAC0832.v:23]
+WARNING: [Synth 8-3331] design top_DAC0832 has unconnected port ILE
+WARNING: [Synth 8-3331] design top_DAC0832 has unconnected port CS_n
+WARNING: [Synth 8-3331] design top_DAC0832 has unconnected port WR1_n
+WARNING: [Synth 8-3331] design top_DAC0832 has unconnected port WR2_n
+WARNING: [Synth 8-3331] design top_DAC0832 has unconnected port XFER_n
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2267.418 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2267.418 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2267.418 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.dcp' for cell 'uut_wave/uut_sine_wave/u_sin_wave'
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/constrs_1/new/DAC0832.xdc]
+Finished Parsing XDC File [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/constrs_1/new/DAC0832.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2271.434 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 2275.262 ; gain = 7.844
+28 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 2275.262 ; gain = 7.844
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon May 13 10:49:00 2024] Launched synth_1...
+Run output will be captured here: D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.runs/synth_1/runme.log
+[Mon May 13 10:49:00 2024] Launched impl_1...
+Run output will be captured here: D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.runs/impl_1/top_DAC0832.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.runs/impl_1/top_DAC0832.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon May 13 10:52:22 2024] Launched synth_1...
+Run output will be captured here: D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.runs/synth_1/runme.log
+[Mon May 13 10:52:22 2024] Launched impl_1...
+Run output will be captured here: D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.runs/impl_1/top_DAC0832.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim_triangle' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.sim/sim_1/behav/xsim/Sin_Wave_Rom.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim_triangle_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/triangle_wave.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module triangle_wave
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sim_1/new/sim_triangle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_triangle
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 1086f32675cd479180ef2bac20b9769a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim_triangle_behav xil_defaultlib.sim_triangle xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.triangle_wave
+Compiling module xil_defaultlib.sim_triangle
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_triangle_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.sim/sim_1/behav/xsim/xsim.dir/sim_triangle_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon May 13 11:07:13 2024...
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_triangle_behav -key {Behavioral:sim_1:Functional:sim_triangle} -tclbatch {sim_triangle.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source sim_triangle.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_triangle_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 2360.641 ; gain = 35.621
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim_triangle' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.sim/sim_1/behav/xsim/Sin_Wave_Rom.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim_triangle_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/triangle_wave.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module triangle_wave
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sim_1/new/sim_triangle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_triangle
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 1086f32675cd479180ef2bac20b9769a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim_triangle_behav xil_defaultlib.sim_triangle xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.triangle_wave
+Compiling module xil_defaultlib.sim_triangle
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_triangle_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_triangle_behav -key {Behavioral:sim_1:Functional:sim_triangle} -tclbatch {sim_triangle.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source sim_triangle.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_triangle_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 2461.648 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim_triangle' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.sim/sim_1/behav/xsim/Sin_Wave_Rom.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim_triangle_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/triangle_wave.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module triangle_wave
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sim_1/new/sim_triangle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_triangle
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 1086f32675cd479180ef2bac20b9769a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim_triangle_behav xil_defaultlib.sim_triangle xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.triangle_wave
+Compiling module xil_defaultlib.sim_triangle
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_triangle_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_triangle_behav -key {Behavioral:sim_1:Functional:sim_triangle} -tclbatch {sim_triangle.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source sim_triangle.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_triangle_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2462.199 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim_triangle' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.sim/sim_1/behav/xsim/Sin_Wave_Rom.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim_triangle_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/triangle_wave.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module triangle_wave
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sim_1/new/sim_triangle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_triangle
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 1086f32675cd479180ef2bac20b9769a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim_triangle_behav xil_defaultlib.sim_triangle xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.triangle_wave
+Compiling module xil_defaultlib.sim_triangle
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_triangle_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_triangle_behav -key {Behavioral:sim_1:Functional:sim_triangle} -tclbatch {sim_triangle.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source sim_triangle.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_triangle_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2462.199 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 us
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon May 13 11:33:15 2024] Launched synth_1...
+Run output will be captured here: D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.runs/synth_1/runme.log
+[Mon May 13 11:33:15 2024] Launched impl_1...
+Run output will be captured here: D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.runs/impl_1/top_DAC0832.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.runs/impl_1/top_DAC0832.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+[Mon May 13 11:36:37 2024] Launched impl_1...
+Run output will be captured here: D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.runs/impl_1/runme.log
+close_hw
+close_design
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcsg324-1
+Top: top_DAC0832
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2464.480 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_DAC0832' [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/top_DAC0832.v:23]
+WARNING: [Synth 8-6104] Input port 'ILE' has an internal driver [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/top_DAC0832.v:34]
+WARNING: [Synth 8-6104] Input port 'CS_n' has an internal driver [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/top_DAC0832.v:35]
+WARNING: [Synth 8-6104] Input port 'WR1_n' has an internal driver [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/top_DAC0832.v:36]
+WARNING: [Synth 8-6104] Input port 'WR2_n' has an internal driver [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/top_DAC0832.v:37]
+WARNING: [Synth 8-6104] Input port 'XFER_n' has an internal driver [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/top_DAC0832.v:38]
+INFO: [Synth 8-6157] synthesizing module 'key_debounce' [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/key_debounce.v:23]
+	Parameter DELAY_YIME bound to: 21'b101101110001101100000 
+WARNING: [Synth 8-6014] Unused sequential element key_value_reg was removed.  [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/key_debounce.v:50]
+WARNING: [Synth 8-6014] Unused sequential element key_n_flag_reg was removed.  [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/key_debounce.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'key_debounce' (1#1) [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/key_debounce.v:23]
+INFO: [Synth 8-6157] synthesizing module 'FSM' [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/FSM.v:23]
+	Parameter SQU bound to: 2'b00 
+	Parameter SIN bound to: 2'b01 
+	Parameter TRI bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'FSM' (2#1) [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/FSM.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pulse' [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/pulse.v:23]
+	Parameter total bound to: 100000000 - type: integer 
+	Parameter frequence bound to: 1000 - type: integer 
+	Parameter sam_freq bound to: 256 - type: integer 
+	Parameter period bound to: 390 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'pulse' (3#1) [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/pulse.v:23]
+INFO: [Synth 8-6157] synthesizing module 'wave' [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/wave.v:23]
+INFO: [Synth 8-6157] synthesizing module 'square_wave' [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/square_wave.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'square_wave' (4#1) [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/square_wave.v:23]
+INFO: [Synth 8-6157] synthesizing module 'sine_wave' [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/sin_wave.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dist_mem_gen_0' [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/.Xil/Vivado-27620-LAPTOP-CCNJK6NK/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dist_mem_gen_0' (5#1) [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/.Xil/Vivado-27620-LAPTOP-CCNJK6NK/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'sine_wave' (6#1) [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/sin_wave.v:23]
+INFO: [Synth 8-6157] synthesizing module 'triangle_wave' [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/triangle_wave.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'triangle_wave' (7#1) [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/triangle_wave.v:23]
+INFO: [Synth 8-6157] synthesizing module 'select_wave' [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/select_wave.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'select_wave' (8#1) [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/select_wave.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'wave' (9#1) [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/wave.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top_DAC0832' (10#1) [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/top_DAC0832.v:23]
+WARNING: [Synth 8-3331] design top_DAC0832 has unconnected port ILE
+WARNING: [Synth 8-3331] design top_DAC0832 has unconnected port CS_n
+WARNING: [Synth 8-3331] design top_DAC0832 has unconnected port WR1_n
+WARNING: [Synth 8-3331] design top_DAC0832 has unconnected port WR2_n
+WARNING: [Synth 8-3331] design top_DAC0832 has unconnected port XFER_n
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2464.480 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2464.480 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2464.480 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.dcp' for cell 'uut_wave/uut_sine_wave/u_sin_wave'
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/constrs_1/new/DAC0832.xdc]
+Finished Parsing XDC File [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/constrs_1/new/DAC0832.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2469.062 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2469.062 ; gain = 4.582
+28 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2469.062 ; gain = 4.582
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon May 13 14:45:35 2024...

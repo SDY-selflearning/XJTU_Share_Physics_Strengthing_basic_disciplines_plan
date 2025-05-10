@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../sync_en.srcs/sources_1/new/sync_enable.v" \
+"../../../../sync_en.srcs/sim_1/new/sim_sync_en.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

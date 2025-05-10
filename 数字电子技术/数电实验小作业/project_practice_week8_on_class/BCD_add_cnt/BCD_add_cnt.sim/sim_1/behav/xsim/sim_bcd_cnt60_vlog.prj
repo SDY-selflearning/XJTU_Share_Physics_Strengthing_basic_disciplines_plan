@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../BCD_add_cnt.srcs/sources_1/new/BCD_cnt_digit.v" \
+"../../../../BCD_add_cnt.srcs/sources_1/new/cnt60.v" \
+"../../../../BCD_add_cnt.srcs/sources_1/new/sec_pule.v" \
+"../../../../BCD_add_cnt.srcs/sources_1/new/show.v" \
+"../../../../BCD_add_cnt.srcs/sim_1/new/sim_bcd_cnt60.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

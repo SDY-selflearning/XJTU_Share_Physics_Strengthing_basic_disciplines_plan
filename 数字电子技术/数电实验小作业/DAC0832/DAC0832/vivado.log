@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun May 26 09:48:22 2024
+# Process ID: 10408
+# Current directory: D:/my_homework/my_vivado_practice/DAC0832/DAC0832
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6132 D:\my_homework\my_vivado_practice\DAC0832\DAC0832\DAC0832.xpr
+# Log file: D:/my_homework/my_vivado_practice/DAC0832/DAC0832/vivado.log
+# Journal file: D:/my_homework/my_vivado_practice/DAC0832/DAC0832\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 765.219 ; gain = 159.074
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun May 26 11:17:49 2024...

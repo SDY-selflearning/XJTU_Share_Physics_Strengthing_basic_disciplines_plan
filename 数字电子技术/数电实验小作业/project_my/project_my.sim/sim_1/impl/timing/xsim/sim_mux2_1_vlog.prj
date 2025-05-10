@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"sim_mux2_1_time_impl.v" \
+"../../../../../project_my.srcs/sim_1/new/sim_mux2_1.v" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,11 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/sim_1/new/sim_bcd_cnt60.v,1713619354,verilog,,,,sim_bcd_cnt60,,,,,,,,
+D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/sim_1/new/sim_cnt60.v,1713066305,verilog,,,,sim_cnt60,,,,,,,,
+D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/sources_1/new/BCD_cnt_digit.v,1713661550,verilog,,D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/sources_1/new/cnt60.v,,BCD_cnt_digit,,,,,,,,
+D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/sources_1/new/cnt60.v,1713661553,verilog,,D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/sources_1/new/sec_pule.v,,cnt60,,,,,,,,
+D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/sources_1/new/sec_pule.v,1713618814,verilog,,D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/sources_1/new/show.v,,sec_pulse,,,,,,,,
+D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/sources_1/new/show.v,1713151529,verilog,,D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/sim_1/new/sim_bcd_cnt60.v,,show,,,,,,,,

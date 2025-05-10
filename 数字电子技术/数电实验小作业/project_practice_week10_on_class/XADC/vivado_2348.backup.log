@@ -1,0 +1,248 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed May  1 11:08:38 2024
+# Process ID: 2348
+# Current directory: D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14048 D:\my_homework\my_vivado_practice\project_practice_week10_on_class\XADC\XADC.xpr
+# Log file: D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/vivado.log
+# Journal file: D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 674.617 ; gain = 102.109
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcsg324-1
+Top: XADC_channel_1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 798.945 ; gain = 81.855
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'XADC_channel_1' [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/XADC_channel_1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'xadc_wiz_0' [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/.Xil/Vivado-2348-LAPTOP-CCNJK6NK/realtime/xadc_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'xadc_wiz_0' (1#1) [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/.Xil/Vivado-2348-LAPTOP-CCNJK6NK/realtime/xadc_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'XADC_channel_1' (2#1) [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/XADC_channel_1.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 821.703 ; gain = 104.613
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 821.703 ; gain = 104.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 821.703 ; gain = 104.613
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.dcp' for cell 'u1'
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 4 IBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.xdc] for cell 'u1/inst'
+Finished Parsing XDC File [d:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.xdc] for cell 'u1/inst'
+Parsing XDC File [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/constrs_1/new/XADC_voltage.xdc]
+Finished Parsing XDC File [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/constrs_1/new/XADC_voltage.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1118.477 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1211.070 ; gain = 493.980
+13 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1211.070 ; gain = 493.980
+launch_runs synth_1 -jobs 4
+[Wed May  1 11:10:20 2024] Launched synth_1...
+Run output will be captured here: D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Wed May  1 11:11:03 2024] Launched impl_1...
+Run output will be captured here: D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed May  1 11:12:30 2024] Launched impl_1...
+Run output will be captured here: D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+open_hw_target: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 2099.195 ; gain = 886.758
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.runs/impl_1/XADC_channel_1.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.runs/impl_1/XADC_channel_1.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+close [ open D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v w ]
+add_files D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/data_output.v w ]
+add_files D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/data_output.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_design
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcsg324-1
+Top: top_XADC_voltage
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2237.480 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_XADC_voltage' [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:23]
+INFO: [Synth 8-6157] synthesizing module 'XADC_channel_1' [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/XADC_channel_1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'xadc_wiz_0' [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/.Xil/Vivado-2348-LAPTOP-CCNJK6NK/realtime/xadc_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'xadc_wiz_0' (1#1) [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/.Xil/Vivado-2348-LAPTOP-CCNJK6NK/realtime/xadc_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'XADC_channel_1' (2#1) [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/XADC_channel_1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'data_output' [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/data_output.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'data_output' (3#1) [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/data_output.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top_XADC_voltage' (4#1) [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:23]
+WARNING: [Synth 8-3331] design data_output has unconnected port do_out[3]
+WARNING: [Synth 8-3331] design data_output has unconnected port do_out[2]
+WARNING: [Synth 8-3331] design data_output has unconnected port do_out[1]
+WARNING: [Synth 8-3331] design data_output has unconnected port do_out[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2237.480 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2237.480 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2237.480 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.dcp' for cell 'top_xadc/u1'
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 4 IBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.xdc] for cell 'top_xadc/u1/inst'
+Finished Parsing XDC File [d:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.xdc] for cell 'top_xadc/u1/inst'
+Parsing XDC File [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/constrs_1/new/XADC_voltage.xdc]
+Finished Parsing XDC File [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/constrs_1/new/XADC_voltage.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2275.539 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2287.734 ; gain = 50.254
+16 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2287.734 ; gain = 50.254
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed May  1 11:39:18 2024] Launched synth_1...
+Run output will be captured here: D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Wed May  1 11:40:14 2024] Launched impl_1...
+Run output will be captured here: D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed May  1 11:41:30 2024] Launched impl_1...
+Run output will be captured here: D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.runs/impl_1/top_XADC_voltage.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.runs/impl_1/top_XADC_voltage.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+add_files -norecurse D:/my_homework/my_vivado_practice/project_practice_week10_on_class/bin2BCD.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_design
+add_files -norecurse D:/my_homework/my_vivado_practice/project_practice_week10_on_class/data_to_voltage.v
+update_compile_order -fileset sources_1
+close [ open D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/bin2BCD2.v w ]
+add_files D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/bin2BCD2.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files D:/my_homework/my_vivado_practice/project_practice_week10_on_class/bin2BCD.v] -no_script -reset -force -quiet
+remove_files  D:/my_homework/my_vivado_practice/project_practice_week10_on_class/bin2BCD.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/data_to_voltage.v w ]
+add_files D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/data_to_voltage.v
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files D:/my_homework/my_vivado_practice/project_practice_week10_on_class/data_to_voltage.v] -no_script -reset -force -quiet
+remove_files  D:/my_homework/my_vivado_practice/project_practice_week10_on_class/data_to_voltage.v
+close [ open D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/bin2BCD.v w ]
+add_files D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/bin2BCD.v
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/bin2BCD2.v] -no_script -reset -force -quiet
+remove_files  D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/bin2BCD2.v
+update_compile_order -fileset sources_1
+add_files -norecurse D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/sources_1/new/show.v
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed May  1 15:59:02 2024...

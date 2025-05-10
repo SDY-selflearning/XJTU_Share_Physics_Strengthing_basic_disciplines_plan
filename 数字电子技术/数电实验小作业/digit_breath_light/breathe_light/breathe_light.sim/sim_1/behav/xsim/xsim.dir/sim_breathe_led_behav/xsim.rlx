@@ -1,0 +1,12 @@
+
+{ 
+    crc :  7387542664451829545  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto 1ebcf7fe82c4434095b3d4abeb4b2512 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_breathe_led_behav xil_defaultlib.sim_breathe_led xil_defaultlib.glbl" , 
+    buildDate : "Dec  7 2018" , 
+    buildTime : "00:33:28" , 
+    linkCmd : "D:\\Xilinx\\Vivado\\2018.3\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/sim_breathe_led_behav/xsimk.exe\"   \"xsim.dir/sim_breathe_led_behav/obj/xsim_0.win64.obj\" \"xsim.dir/sim_breathe_led_behav/obj/xsim_1.win64.obj\" -L\"D:\\Xilinx\\Vivado\\2018.3\\lib\\win64.o\" -lrdi_simulator_kernel  -lrdi_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

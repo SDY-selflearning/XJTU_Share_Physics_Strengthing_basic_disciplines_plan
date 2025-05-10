@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Apr 22 10:40:32 2024
+# Process ID: 3964
+# Current directory: D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5000 D:\my_homework\my_vivado_practice\project_practice_week8_on_class\BCD_add_cnt\BCD_add_cnt.xpr
+# Log file: D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/vivado.log
+# Journal file: D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 728.309 ; gain = 107.535
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 22 10:43:51 2024...

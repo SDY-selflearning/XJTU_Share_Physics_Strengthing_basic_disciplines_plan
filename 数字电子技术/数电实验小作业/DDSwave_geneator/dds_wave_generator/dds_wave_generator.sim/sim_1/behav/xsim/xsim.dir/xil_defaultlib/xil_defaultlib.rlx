@@ -1,0 +1,11 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sim_1/new/sim_pulse.v,1716685215,verilog,,,,sim_pulse,,,,,,,,
+D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sim_1/new/sim_square.v,1715342390,verilog,,,,sim_square,,,,,,,,
+D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sim_1/new/sim_triangle.v,1717293108,verilog,,,,sim_triangle,,,,,,,,
+D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/pulse.v,1716649963,verilog,,D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sim_1/new/sim_pulse.v,,pulse,,,,,,,,
+D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/square_wave.v,1716779853,verilog,,D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sim_1/new/sim_square.v,,square_wave,,,,,,,,
+D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/triangle_wave.v,1717293445,verilog,,D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sim_1/new/sim_triangle.v,,triangle_wave,,,,,,,,

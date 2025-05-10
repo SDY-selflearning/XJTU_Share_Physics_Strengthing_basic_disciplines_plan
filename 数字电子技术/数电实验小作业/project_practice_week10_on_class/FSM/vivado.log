@@ -1,0 +1,128 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon May  6 10:26:07 2024
+# Process ID: 24284
+# Current directory: D:/my_homework/my_vivado_practice/project_practice_week10_on_class/FSM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19388 D:\my_homework\my_vivado_practice\project_practice_week10_on_class\FSM\FSM.xpr
+# Log file: D:/my_homework/my_vivado_practice/project_practice_week10_on_class/FSM/vivado.log
+# Journal file: D:/my_homework/my_vivado_practice/project_practice_week10_on_class/FSM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/my_homework/my_vivado_practice/project_practice_week10_on_class/FSM/FSM.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 728.641 ; gain = 123.098
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcsg324-1
+Top: top_sec_cnt
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 833.578 ; gain = 77.199
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_sec_cnt' [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/FSM/FSM.srcs/sources_1/new/top_sec_cnt.v:23]
+INFO: [Synth 8-6157] synthesizing module 'get_key' [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/FSM/FSM.srcs/sources_1/new/get_key.v:23]
+INFO: [Synth 8-6157] synthesizing module 'key_debounce' [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/FSM/FSM.srcs/sources_1/new/key_debounce.v:23]
+	Parameter DELAY_YIME bound to: 21'b101101110001101100000 
+WARNING: [Synth 8-6014] Unused sequential element key_value_reg was removed.  [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/FSM/FSM.srcs/sources_1/new/key_debounce.v:50]
+WARNING: [Synth 8-6014] Unused sequential element key_n_flag_reg was removed.  [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/FSM/FSM.srcs/sources_1/new/key_debounce.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'key_debounce' (1#1) [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/FSM/FSM.srcs/sources_1/new/key_debounce.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'get_key' (2#1) [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/FSM/FSM.srcs/sources_1/new/get_key.v:23]
+INFO: [Synth 8-6157] synthesizing module 'FSM' [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/FSM/FSM.srcs/sources_1/new/FSM.v:23]
+	Parameter WORK_INIT bound to: 2'b00 
+	Parameter COUNT bound to: 2'b01 
+	Parameter PAUSE bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'FSM' (3#1) [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/FSM/FSM.srcs/sources_1/new/FSM.v:23]
+INFO: [Synth 8-6157] synthesizing module 'cntdown' [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/FSM/FSM.srcs/sources_1/new/cntdown.v:23]
+INFO: [Synth 8-6157] synthesizing module 'sec_pulse' [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/FSM/FSM.srcs/sources_1/new/sec_pule.v:23]
+	Parameter period bound to: 100000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sec_pulse' (4#1) [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/FSM/FSM.srcs/sources_1/new/sec_pule.v:23]
+INFO: [Synth 8-6157] synthesizing module 'cnt60' [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/FSM/FSM.srcs/sources_1/new/cnt60.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'cnt60' (5#1) [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/FSM/FSM.srcs/sources_1/new/cnt60.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'cntdown' (6#1) [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/FSM/FSM.srcs/sources_1/new/cntdown.v:23]
+INFO: [Synth 8-6157] synthesizing module 'show' [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/FSM/FSM.srcs/sources_1/new/show.v:23]
+INFO: [Synth 8-226] default block is never used [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/FSM/FSM.srcs/sources_1/new/show.v:111]
+INFO: [Synth 8-6155] done synthesizing module 'show' (7#1) [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/FSM/FSM.srcs/sources_1/new/show.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top_sec_cnt' (8#1) [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/FSM/FSM.srcs/sources_1/new/top_sec_cnt.v:23]
+WARNING: [Synth 8-3331] design show has unconnected port x[15]
+WARNING: [Synth 8-3331] design show has unconnected port x[14]
+WARNING: [Synth 8-3331] design show has unconnected port x[13]
+WARNING: [Synth 8-3331] design show has unconnected port x[12]
+WARNING: [Synth 8-3331] design show has unconnected port x[11]
+WARNING: [Synth 8-3331] design show has unconnected port x[10]
+WARNING: [Synth 8-3331] design show has unconnected port x[9]
+WARNING: [Synth 8-3331] design show has unconnected port x[8]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 871.137 ; gain = 114.758
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 871.137 ; gain = 114.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 871.137 ; gain = 114.758
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/FSM/FSM.srcs/constrs_1/new/FSM.xdc]
+Finished Parsing XDC File [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/FSM/FSM.srcs/constrs_1/new/FSM.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1181.375 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:22 ; elapsed = 00:00:20 . Memory (MB): peak = 1230.117 ; gain = 473.738
+21 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:20 . Memory (MB): peak = 1230.117 ; gain = 473.738
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon May  6 10:27:30 2024] Launched impl_1...
+Run output will be captured here: D:/my_homework/my_vivado_practice/project_practice_week10_on_class/FSM/FSM.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/project_practice_week10_on_class/FSM/FSM.runs/impl_1/top_sec_cnt.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/project_practice_week10_on_class/FSM/FSM.runs/impl_1/top_sec_cnt.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon May  6 10:39:56 2024...

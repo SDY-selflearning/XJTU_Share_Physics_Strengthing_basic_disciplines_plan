@@ -1,0 +1,119 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Apr 22 11:13:12 2024
+# Process ID: 18824
+# Current directory: D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11016 D:\my_homework\my_vivado_practice\project_practice_week8_on_class\BCD_add_cnt\BCD_add_cnt.xpr
+# Log file: D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/vivado.log
+# Journal file: D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 718.531 ; gain = 106.824
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcsg324-1
+Top: BCD_cnt_digit
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 842.938 ; gain = 45.266
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'BCD_cnt_digit' [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/sources_1/new/BCD_cnt_digit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'sec_pulse' [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/sources_1/new/sec_pule.v:23]
+	Parameter period bound to: 100000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sec_pulse' (1#1) [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/sources_1/new/sec_pule.v:23]
+INFO: [Synth 8-6157] synthesizing module 'cnt60' [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/sources_1/new/cnt60.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'cnt60' (2#1) [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/sources_1/new/cnt60.v:23]
+INFO: [Synth 8-6157] synthesizing module 'show' [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/sources_1/new/show.v:23]
+INFO: [Synth 8-226] default block is never used [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/sources_1/new/show.v:62]
+INFO: [Synth 8-226] default block is never used [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/sources_1/new/show.v:84]
+INFO: [Synth 8-226] default block is never used [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/sources_1/new/show.v:105]
+INFO: [Synth 8-6155] done synthesizing module 'show' (3#1) [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/sources_1/new/show.v:23]
+INFO: [Synth 8-6157] synthesizing module 'key_debounce' [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/sources_1/new/key_debounce.v:23]
+	Parameter DELAY_YIME bound to: 21'b101101110001101100000 
+WARNING: [Synth 8-6014] Unused sequential element key_value_reg was removed.  [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/sources_1/new/key_debounce.v:50]
+WARNING: [Synth 8-6014] Unused sequential element key_n_flag_reg was removed.  [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/sources_1/new/key_debounce.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'key_debounce' (4#1) [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/sources_1/new/key_debounce.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'BCD_cnt_digit' (5#1) [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/sources_1/new/BCD_cnt_digit.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 885.840 ; gain = 88.168
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 885.840 ; gain = 88.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 885.840 ; gain = 88.168
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/constrs_1/new/BCD_cnt60_digit.xdc]
+Finished Parsing XDC File [D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/constrs_1/new/BCD_cnt60_digit.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1203.449 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:22 ; elapsed = 00:00:17 . Memory (MB): peak = 1258.598 ; gain = 460.926
+17 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:17 . Memory (MB): peak = 1258.598 ; gain = 460.926
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Apr 22 11:15:52 2024] Launched synth_1...
+Run output will be captured here: D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Mon Apr 22 11:16:33 2024] Launched impl_1...
+Run output will be captured here: D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Apr 22 11:17:52 2024] Launched impl_1...
+Run output will be captured here: D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.runs/impl_1/BCD_cnt_digit.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.runs/impl_1/BCD_cnt_digit.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 22 11:47:02 2024...

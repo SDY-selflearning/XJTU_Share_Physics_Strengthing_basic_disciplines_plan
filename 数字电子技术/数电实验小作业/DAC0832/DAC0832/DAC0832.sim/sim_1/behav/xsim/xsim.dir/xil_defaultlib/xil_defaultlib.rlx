@@ -1,0 +1,16 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sim_1/new/sim_pulse.v,1715258380,verilog,,D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sim_1/new/sim_sine.v,,sim_pulse,,,,,,,,
+D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sim_1/new/sim_sine.v,1715326867,verilog,,D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sim_1/new/sim_square.v,,sim_sine,,,,,,,,
+D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sim_1/new/sim_square.v,1715342390,verilog,,D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sim_1/new/sim_trangle.v,,sim_square,,,,,,,,
+D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sim_1/new/sim_triangle.v,1715342872,verilog,,,,sim_triangle,,,,,,,,
+D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v,1715263712,verilog,,D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/FSM.v,,dist_mem_gen_0,,,,,,,,
+D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/FSM.v,1715255952,verilog,,D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/key_debounce.v,,FSM,,,,,,,,
+D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/key_debounce.v,1713666979,verilog,,D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/pulse.v,,key_debounce,,,,,,,,
+D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/pulse.v,1715324859,verilog,,D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sim_1/new/sim_pulse.v,,pulse,,,,,,,,
+D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/sin_wave.v,1715327035,verilog,,D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/square_wave.v,,sin_wave,,,,,,,,
+D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/square_wave.v,1715328433,verilog,,D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/triangle_wave.v,,square_wave,,,,,,,,
+D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/triangle_wave.v,1715571081,verilog,,D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sim_1/new/sim_triangle.v,,triangle_wave,,,,,,,,

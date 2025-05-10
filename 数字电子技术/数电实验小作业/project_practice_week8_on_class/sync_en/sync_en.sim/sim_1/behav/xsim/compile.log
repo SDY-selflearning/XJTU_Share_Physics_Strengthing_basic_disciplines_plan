@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/my_homework/my_vivado_practice/project_practice_week8_on_class/sync_en/sync_en.srcs/sources_1/new/sync_enable.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sync_enable
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/my_homework/my_vivado_practice/project_practice_week8_on_class/sync_en/sync_en.srcs/sim_1/new/sim_sync_en.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_sync_en

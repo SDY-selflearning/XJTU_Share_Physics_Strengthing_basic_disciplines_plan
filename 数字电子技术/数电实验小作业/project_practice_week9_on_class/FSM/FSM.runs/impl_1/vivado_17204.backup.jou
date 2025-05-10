@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Apr 29 11:58:47 2024
+# Process ID: 17204
+# Current directory: D:/my_homework/my_vivado_practice/project_practice_week9_on_class/FSM/FSM.runs/impl_1
+# Command line: vivado.exe -log top_sec_cnt.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_sec_cnt.tcl -notrace
+# Log file: D:/my_homework/my_vivado_practice/project_practice_week9_on_class/FSM/FSM.runs/impl_1/top_sec_cnt.vdi
+# Journal file: D:/my_homework/my_vivado_practice/project_practice_week9_on_class/FSM/FSM.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source top_sec_cnt.tcl -notrace

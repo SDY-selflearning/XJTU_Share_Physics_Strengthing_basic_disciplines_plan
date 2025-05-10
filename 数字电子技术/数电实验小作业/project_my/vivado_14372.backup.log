@@ -1,0 +1,69 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Mar 31 22:37:43 2024
+# Process ID: 14372
+# Current directory: D:/my_homework/my_vivado_practice/project_my
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18072 D:\my_homework\my_vivado_practice\project_my\project_my.xpr
+# Log file: D:/my_homework/my_vivado_practice/project_my/vivado.log
+# Journal file: D:/my_homework/my_vivado_practice/project_my\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/my_homework/my_vivado_practice/project_my/project_my.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 734.801 ; gain = 125.770
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcsg324-1
+Top: mux2_1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 904.848 ; gain = 59.328
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'mux2_1' [D:/my_homework/my_vivado_practice/project_my/project_my.srcs/sources_1/new/mux2_1.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux2_1' (1#1) [D:/my_homework/my_vivado_practice/project_my/project_my.srcs/sources_1/new/mux2_1.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 941.492 ; gain = 95.973
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 941.492 ; gain = 95.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 941.492 ; gain = 95.973
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/my_homework/my_vivado_practice/project_my/project_my.srcs/constrs_1/new/mux2_1.xdc]
+Finished Parsing XDC File [D:/my_homework/my_vivado_practice/project_my/project_my.srcs/constrs_1/new/mux2_1.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1107.887 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 1221.551 ; gain = 376.031
+6 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 1221.551 ; gain = 376.031
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Mar 31 22:38:28 2024...

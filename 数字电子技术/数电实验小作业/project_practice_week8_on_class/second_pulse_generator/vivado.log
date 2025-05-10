@@ -1,0 +1,117 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Apr 13 22:54:08 2024
+# Process ID: 4628
+# Current directory: D:/my_homework/my_vivado_practice/project_practice_week8_on_class/second_pulse_generator
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15084 D:\my_homework\my_vivado_practice\project_practice_week8_on_class\second_pulse_generator\second_pulse_generator.xpr
+# Log file: D:/my_homework/my_vivado_practice/project_practice_week8_on_class/second_pulse_generator/vivado.log
+# Journal file: D:/my_homework/my_vivado_practice/project_practice_week8_on_class/second_pulse_generator\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/my_homework/my_vivado_practice/project_practice_week8_on_class/second_pulse_generator/second_pulse_generator.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'D:/my_homework/my_vivado_practice/project_practice_week8_on_class/second_pulse_generator'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 725.141 ; gain = 110.668
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+[Sat Apr 13 22:58:32 2024] Launched synth_1...
+Run output will be captured here: D:/my_homework/my_vivado_practice/project_practice_week8_on_class/second_pulse_generator/second_pulse_generator.runs/synth_1/runme.log
+[Sat Apr 13 22:58:32 2024] Launched impl_1...
+Run output will be captured here: D:/my_homework/my_vivado_practice/project_practice_week8_on_class/second_pulse_generator/second_pulse_generator.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+[Sat Apr 13 23:00:17 2024] Launched synth_1...
+Run output will be captured here: D:/my_homework/my_vivado_practice/project_practice_week8_on_class/second_pulse_generator/second_pulse_generator.runs/synth_1/runme.log
+[Sat Apr 13 23:00:17 2024] Launched impl_1...
+Run output will be captured here: D:/my_homework/my_vivado_practice/project_practice_week8_on_class/second_pulse_generator/second_pulse_generator.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+[Sat Apr 13 23:03:53 2024] Launched synth_1...
+Run output will be captured here: D:/my_homework/my_vivado_practice/project_practice_week8_on_class/second_pulse_generator/second_pulse_generator.runs/synth_1/runme.log
+[Sat Apr 13 23:03:53 2024] Launched impl_1...
+Run output will be captured here: D:/my_homework/my_vivado_practice/project_practice_week8_on_class/second_pulse_generator/second_pulse_generator.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Apr 13 23:05:15 2024] Launched impl_1...
+Run output will be captured here: D:/my_homework/my_vivado_practice/project_practice_week8_on_class/second_pulse_generator/second_pulse_generator.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+[Sat Apr 13 23:06:53 2024] Launched impl_1...
+Run output will be captured here: D:/my_homework/my_vivado_practice/project_practice_week8_on_class/second_pulse_generator/second_pulse_generator.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Apr 13 23:08:01 2024] Launched impl_1...
+Run output will be captured here: D:/my_homework/my_vivado_practice/project_practice_week8_on_class/second_pulse_generator/second_pulse_generator.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Apr 13 23:09:10 2024] Launched synth_1...
+Run output will be captured here: D:/my_homework/my_vivado_practice/project_practice_week8_on_class/second_pulse_generator/second_pulse_generator.runs/synth_1/runme.log
+[Sat Apr 13 23:09:10 2024] Launched impl_1...
+Run output will be captured here: D:/my_homework/my_vivado_practice/project_practice_week8_on_class/second_pulse_generator/second_pulse_generator.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/project_practice_week8_on_class/second_pulse_generator/second_pulse_generator.runs/impl_1/second_pulse_generator.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/project_practice_week8_on_class/second_pulse_generator/second_pulse_generator.runs/impl_1/second_pulse_generator.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 13 23:26:01 2024...

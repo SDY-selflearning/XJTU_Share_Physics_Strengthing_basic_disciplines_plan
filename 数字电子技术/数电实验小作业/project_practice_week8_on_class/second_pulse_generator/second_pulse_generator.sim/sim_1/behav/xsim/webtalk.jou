@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Apr 13 20:36:27 2024
+# Process ID: 2704
+# Current directory: D:/my_homework/my_vivado_practice/project_practice_week8_on_class/second_pulse_generator/second_pulse_generator.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source D:/my_homework/my_vivado_practice/project_practice_week8_on_class/second_pulse_generator/second_pulse_generator.sim/sim_1/behav/xsim/xsim.dir/sim_sec_pule_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/my_homework/my_vivado_practice/project_practice_week8_on_class/second_pulse_generator/second_pulse_generator.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: D:/my_homework/my_vivado_practice/project_practice_week8_on_class/second_pulse_generator/second_pulse_generator.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source D:/my_homework/my_vivado_practice/project_practice_week8_on_class/second_pulse_generator/second_pulse_generator.sim/sim_1/behav/xsim/xsim.dir/sim_sec_pule_behav/webtalk/xsim_webtalk.tcl -notrace

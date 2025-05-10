@@ -1,0 +1,7 @@
+set_property SRC_FILE_INFO {cfile:D:/my_homework/my_vivado_practice/project_practice_week8_on_class/second_pulse_generator/second_pulse_generator.srcs/constrs_1/new/sec_pule.xdc rfile:../../../second_pulse_generator.srcs/constrs_1/new/sec_pule.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict {PACKAGE_PIN P17 IOSTANDARD LVCMOS33} [get_ports clk ]
+set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict {PACKAGE_PIN P15 IOSTANDARD LVCMOS33} [get_ports rst_n  ]
+set_property src_info {type:XDC file:1 line:3 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict {PACKAGE_PIN K2 IOSTANDARD LVCMOS33} [get_ports {sec_pule}]

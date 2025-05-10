@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/sources_1/new/BCD_cnt_digit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BCD_cnt_digit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/sources_1/new/cnt60.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cnt60
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/sources_1/new/sec_pule.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sec_pulse
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/sources_1/new/show.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module show
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/my_homework/my_vivado_practice/project_practice_week8_on_class/BCD_add_cnt/BCD_add_cnt.srcs/sim_1/new/sim_bcd_cnt60.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_bcd_cnt60

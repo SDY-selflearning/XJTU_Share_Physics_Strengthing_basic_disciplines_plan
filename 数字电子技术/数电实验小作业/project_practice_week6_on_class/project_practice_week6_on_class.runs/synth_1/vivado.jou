@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Apr  1 11:21:09 2024
+# Process ID: 15640
+# Current directory: D:/my_homework/my_vivado_practice/project_practice_week6_on_class/project_practice_week6_on_class.runs/synth_1
+# Command line: vivado.exe -log and_or_not.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source and_or_not.tcl
+# Log file: D:/my_homework/my_vivado_practice/project_practice_week6_on_class/project_practice_week6_on_class.runs/synth_1/and_or_not.vds
+# Journal file: D:/my_homework/my_vivado_practice/project_practice_week6_on_class/project_practice_week6_on_class.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source and_or_not.tcl -notrace

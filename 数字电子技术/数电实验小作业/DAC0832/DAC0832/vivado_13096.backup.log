@@ -1,0 +1,112 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun May 26 09:37:55 2024
+# Process ID: 13096
+# Current directory: D:/my_homework/my_vivado_practice/DAC0832/DAC0832
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14704 D:\my_homework\my_vivado_practice\DAC0832\DAC0832\DAC0832.xpr
+# Log file: D:/my_homework/my_vivado_practice/DAC0832/DAC0832/vivado.log
+# Journal file: D:/my_homework/my_vivado_practice/DAC0832/DAC0832\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 967.875 ; gain = 103.027
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcsg324-1
+Top: top_DAC0832
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 967.875 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_DAC0832' [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/top_DAC0832.v:23]
+WARNING: [Synth 8-6104] Input port 'ILE' has an internal driver [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/top_DAC0832.v:34]
+WARNING: [Synth 8-6104] Input port 'CS_n' has an internal driver [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/top_DAC0832.v:35]
+WARNING: [Synth 8-6104] Input port 'WR1_n' has an internal driver [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/top_DAC0832.v:36]
+WARNING: [Synth 8-6104] Input port 'WR2_n' has an internal driver [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/top_DAC0832.v:37]
+WARNING: [Synth 8-6104] Input port 'XFER_n' has an internal driver [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/top_DAC0832.v:38]
+INFO: [Synth 8-6157] synthesizing module 'key_debounce' [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/key_debounce.v:23]
+	Parameter DELAY_YIME bound to: 21'b101101110001101100000 
+WARNING: [Synth 8-6014] Unused sequential element key_value_reg was removed.  [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/key_debounce.v:50]
+WARNING: [Synth 8-6014] Unused sequential element key_n_flag_reg was removed.  [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/key_debounce.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'key_debounce' (1#1) [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/key_debounce.v:23]
+INFO: [Synth 8-6157] synthesizing module 'FSM' [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/FSM.v:23]
+	Parameter SQU bound to: 2'b00 
+	Parameter SIN bound to: 2'b01 
+	Parameter TRI bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'FSM' (2#1) [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/FSM.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pulse' [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/pulse.v:23]
+	Parameter total bound to: 100000000 - type: integer 
+	Parameter frequence bound to: 1000 - type: integer 
+	Parameter sam_freq bound to: 256 - type: integer 
+	Parameter period bound to: 390 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'pulse' (3#1) [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/pulse.v:23]
+INFO: [Synth 8-6157] synthesizing module 'wave' [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/wave.v:23]
+INFO: [Synth 8-6157] synthesizing module 'square_wave' [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/square_wave.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'square_wave' (4#1) [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/square_wave.v:23]
+INFO: [Synth 8-6157] synthesizing module 'sine_wave' [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/sin_wave.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dist_mem_gen_0' [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/.Xil/Vivado-13096-LAPTOP-CCNJK6NK/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dist_mem_gen_0' (5#1) [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/.Xil/Vivado-13096-LAPTOP-CCNJK6NK/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'sine_wave' (6#1) [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/sin_wave.v:23]
+INFO: [Synth 8-6157] synthesizing module 'triangle_wave' [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/triangle_wave.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'triangle_wave' (7#1) [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/triangle_wave.v:23]
+INFO: [Synth 8-6157] synthesizing module 'select_wave' [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/select_wave.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'select_wave' (8#1) [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/select_wave.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'wave' (9#1) [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/wave.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top_DAC0832' (10#1) [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/new/top_DAC0832.v:23]
+WARNING: [Synth 8-3331] design top_DAC0832 has unconnected port ILE
+WARNING: [Synth 8-3331] design top_DAC0832 has unconnected port CS_n
+WARNING: [Synth 8-3331] design top_DAC0832 has unconnected port WR1_n
+WARNING: [Synth 8-3331] design top_DAC0832 has unconnected port WR2_n
+WARNING: [Synth 8-3331] design top_DAC0832 has unconnected port XFER_n
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 992.887 ; gain = 25.012
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 992.887 ; gain = 25.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 992.887 ; gain = 25.012
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.dcp' for cell 'uut_wave/uut_sine_wave/u_sin_wave'
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/constrs_1/new/DAC0832.xdc]
+Finished Parsing XDC File [D:/my_homework/my_vivado_practice/DAC0832/DAC0832/DAC0832.srcs/constrs_1/new/DAC0832.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1219.266 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1254.895 ; gain = 287.020
+29 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1254.895 ; gain = 287.020
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun May 26 09:40:06 2024...

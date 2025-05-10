@@ -1,0 +1,387 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat May 25 18:16:17 2024
+# Process ID: 5060
+# Current directory: D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11680 D:\my_homework\my_vivado_practice\project_practice_week10_on_class\XADC\XADC.xpr
+# Log file: D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/vivado.log
+# Journal file: D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:30 ; elapsed = 00:00:17 . Memory (MB): peak = 770.539 ; gain = 156.254
+update_compile_order -fileset sources_1
+esynth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcsg324-1
+Top: top_XADC_voltage
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 868.496 ; gain = 9.891
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_XADC_voltage' [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:23]
+INFO: [Synth 8-6157] synthesizing module 'XADC_channel_1' [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/XADC_channel_1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'xadc_wiz_0' [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/.Xil/Vivado-16776-LAPTOP-CCNJK6NK/realtime/xadc_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'xadc_wiz_0' (1#1) [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/.Xil/Vivado-16776-LAPTOP-CCNJK6NK/realtime/xadc_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'XADC_channel_1' (2#1) [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/XADC_channel_1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'data_output' [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/data_output.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'data_output' (3#1) [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/data_output.v:23]
+INFO: [Synth 8-6157] synthesizing module 'bin2BCD' [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/bin2BCD.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bin2BCD' (4#1) [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/bin2BCD.v:23]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:55]
+INFO: [Synth 8-6157] synthesizing module 'show_high_low' [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/show_high_low.v:23]
+INFO: [Synth 8-6157] synthesizing module 'show' [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/show.v:23]
+INFO: [Synth 8-226] default block is never used [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/show.v:129]
+INFO: [Synth 8-6155] done synthesizing module 'show' (5#1) [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/show.v:23]
+WARNING: [Synth 8-6104] Input port 'a_to_g2' has an internal driver [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/show_high_low.v:36]
+WARNING: [Synth 8-6104] Input port 'an2' has an internal driver [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/show_high_low.v:37]
+WARNING: [Synth 8-6104] Input port 'a_to_g1' has an internal driver [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/show_high_low.v:43]
+WARNING: [Synth 8-6104] Input port 'an1' has an internal driver [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/show_high_low.v:44]
+INFO: [Synth 8-6155] done synthesizing module 'show_high_low' (6#1) [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/show_high_low.v:23]
+WARNING: [Synth 8-3848] Net an1 in module/entity top_XADC_voltage does not have driver. [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:29]
+WARNING: [Synth 8-3848] Net an2 in module/entity top_XADC_voltage does not have driver. [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:29]
+WARNING: [Synth 8-3848] Net a_to_g1 in module/entity top_XADC_voltage does not have driver. [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:30]
+WARNING: [Synth 8-3848] Net a_to_g2 in module/entity top_XADC_voltage does not have driver. [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'top_XADC_voltage' (7#1) [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:23]
+WARNING: [Synth 8-3331] design data_output has unconnected port do_out[3]
+WARNING: [Synth 8-3331] design data_output has unconnected port do_out[2]
+WARNING: [Synth 8-3331] design data_output has unconnected port do_out[1]
+WARNING: [Synth 8-3331] design data_output has unconnected port do_out[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 912.074 ; gain = 53.469
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin top_show_high_low:an1[3] to constant 0 [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:55]
+WARNING: [Synth 8-3295] tying undriven pin top_show_high_low:an1[2] to constant 0 [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:55]
+WARNING: [Synth 8-3295] tying undriven pin top_show_high_low:an1[1] to constant 0 [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:55]
+WARNING: [Synth 8-3295] tying undriven pin top_show_high_low:an1[0] to constant 0 [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:55]
+WARNING: [Synth 8-3295] tying undriven pin top_show_high_low:an2[3] to constant 0 [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:55]
+WARNING: [Synth 8-3295] tying undriven pin top_show_high_low:an2[2] to constant 0 [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:55]
+WARNING: [Synth 8-3295] tying undriven pin top_show_high_low:an2[1] to constant 0 [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:55]
+WARNING: [Synth 8-3295] tying undriven pin top_show_high_low:an2[0] to constant 0 [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:55]
+WARNING: [Synth 8-3295] tying undriven pin top_show_high_low:a_to_g1[7] to constant 0 [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:55]
+WARNING: [Synth 8-3295] tying undriven pin top_show_high_low:a_to_g1[6] to constant 0 [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:55]
+WARNING: [Synth 8-3295] tying undriven pin top_show_high_low:a_to_g1[5] to constant 0 [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:55]
+WARNING: [Synth 8-3295] tying undriven pin top_show_high_low:a_to_g1[4] to constant 0 [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:55]
+WARNING: [Synth 8-3295] tying undriven pin top_show_high_low:a_to_g1[3] to constant 0 [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:55]
+WARNING: [Synth 8-3295] tying undriven pin top_show_high_low:a_to_g1[2] to constant 0 [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:55]
+WARNING: [Synth 8-3295] tying undriven pin top_show_high_low:a_to_g1[1] to constant 0 [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:55]
+WARNING: [Synth 8-3295] tying undriven pin top_show_high_low:a_to_g1[0] to constant 0 [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:55]
+WARNING: [Synth 8-3295] tying undriven pin top_show_high_low:a_to_g2[7] to constant 0 [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:55]
+WARNING: [Synth 8-3295] tying undriven pin top_show_high_low:a_to_g2[6] to constant 0 [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:55]
+WARNING: [Synth 8-3295] tying undriven pin top_show_high_low:a_to_g2[5] to constant 0 [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:55]
+WARNING: [Synth 8-3295] tying undriven pin top_show_high_low:a_to_g2[4] to constant 0 [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:55]
+WARNING: [Synth 8-3295] tying undriven pin top_show_high_low:a_to_g2[3] to constant 0 [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:55]
+WARNING: [Synth 8-3295] tying undriven pin top_show_high_low:a_to_g2[2] to constant 0 [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:55]
+WARNING: [Synth 8-3295] tying undriven pin top_show_high_low:a_to_g2[1] to constant 0 [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:55]
+WARNING: [Synth 8-3295] tying undriven pin top_show_high_low:a_to_g2[0] to constant 0 [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:55]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 912.074 ; gain = 53.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 912.074 ; gain = 53.469
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.dcp' for cell 'top_xadc/u1'
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 4 IBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.xdc] for cell 'top_xadc/u1/inst'
+Finished Parsing XDC File [d:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.xdc] for cell 'top_xadc/u1/inst'
+Parsing XDC File [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/constrs_1/new/XADC_voltage.xdc]
+Finished Parsing XDC File [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/constrs_1/new/XADC_voltage.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1232.324 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1281.043 ; gain = 422.438
+24 Infos, 37 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1281.043 ; gain = 422.438
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat May 25 18:23:22 2024] Launched synth_1...
+Run output will be captured here: D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.runs/synth_1/runme.log
+[Sat May 25 18:23:22 2024] Launched impl_1...
+Run output will be captured here: D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.runs/impl_1/runme.log
+close_design
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.runs/impl_1/top_XADC_voltage.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.runs/impl_1/top_XADC_voltage.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat May 25 18:27:42 2024] Launched synth_1...
+Run output will be captured here: D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.runs/synth_1/runme.log
+[Sat May 25 18:27:42 2024] Launched impl_1...
+Run output will be captured here: D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.runs/impl_1/top_XADC_voltage.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat May 25 18:30:51 2024] Launched synth_1...
+Run output will be captured here: D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.runs/synth_1/runme.log
+[Sat May 25 18:30:51 2024] Launched impl_1...
+Run output will be captured here: D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.runs/impl_1/top_XADC_voltage.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat May 25 18:33:30 2024] Launched impl_1...
+Run output will be captured here: D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.runs/impl_1/top_XADC_voltage.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.runs/impl_1/top_XADC_voltage.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat May 25 18:35:38 2024] Launched synth_1...
+Run output will be captured here: D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.runs/synth_1/runme.log
+[Sat May 25 18:35:38 2024] Launched impl_1...
+Run output will be captured here: D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.runs/impl_1/top_XADC_voltage.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.runs/impl_1/top_XADC_voltage.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat May 25 18:39:49 2024] Launched synth_1...
+Run output will be captured here: D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.runs/synth_1/runme.log
+[Sat May 25 18:39:49 2024] Launched impl_1...
+Run output will be captured here: D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.runs/impl_1/top_XADC_voltage.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.runs/impl_1/top_XADC_voltage.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcsg324-1
+Top: top_XADC_voltage
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2276.516 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_XADC_voltage' [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:23]
+INFO: [Synth 8-6157] synthesizing module 'XADC_channel_1' [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/XADC_channel_1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'xadc_wiz_0' [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/.Xil/Vivado-16776-LAPTOP-CCNJK6NK/realtime/xadc_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'xadc_wiz_0' (1#1) [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/.Xil/Vivado-16776-LAPTOP-CCNJK6NK/realtime/xadc_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'XADC_channel_1' (2#1) [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/XADC_channel_1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'data_output' [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/data_output.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'data_output' (3#1) [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/data_output.v:23]
+INFO: [Synth 8-6157] synthesizing module 'bin2BCD' [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/bin2BCD.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bin2BCD' (4#1) [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/bin2BCD.v:23]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:55]
+INFO: [Synth 8-6157] synthesizing module 'show_high_low' [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/show_high_low.v:23]
+INFO: [Synth 8-6157] synthesizing module 'show' [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/show.v:23]
+INFO: [Synth 8-226] default block is never used [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/show.v:129]
+INFO: [Synth 8-6155] done synthesizing module 'show' (5#1) [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/show.v:23]
+WARNING: [Synth 8-6104] Input port 'a_to_g2' has an internal driver [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/show_high_low.v:36]
+WARNING: [Synth 8-6104] Input port 'an2' has an internal driver [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/show_high_low.v:37]
+WARNING: [Synth 8-6104] Input port 'a_to_g1' has an internal driver [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/show_high_low.v:43]
+WARNING: [Synth 8-6104] Input port 'an1' has an internal driver [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/show_high_low.v:44]
+INFO: [Synth 8-6155] done synthesizing module 'show_high_low' (6#1) [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/show_high_low.v:23]
+WARNING: [Synth 8-3848] Net an1 in module/entity top_XADC_voltage does not have driver. [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:29]
+WARNING: [Synth 8-3848] Net an2 in module/entity top_XADC_voltage does not have driver. [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:29]
+WARNING: [Synth 8-3848] Net a_to_g1 in module/entity top_XADC_voltage does not have driver. [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:30]
+WARNING: [Synth 8-3848] Net a_to_g2 in module/entity top_XADC_voltage does not have driver. [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'top_XADC_voltage' (7#1) [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:23]
+WARNING: [Synth 8-3331] design data_output has unconnected port do_out[3]
+WARNING: [Synth 8-3331] design data_output has unconnected port do_out[2]
+WARNING: [Synth 8-3331] design data_output has unconnected port do_out[1]
+WARNING: [Synth 8-3331] design data_output has unconnected port do_out[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2276.516 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin top_show_high_low:an1[3] to constant 0 [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:55]
+WARNING: [Synth 8-3295] tying undriven pin top_show_high_low:an1[2] to constant 0 [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:55]
+WARNING: [Synth 8-3295] tying undriven pin top_show_high_low:an1[1] to constant 0 [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:55]
+WARNING: [Synth 8-3295] tying undriven pin top_show_high_low:an1[0] to constant 0 [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:55]
+WARNING: [Synth 8-3295] tying undriven pin top_show_high_low:an2[3] to constant 0 [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:55]
+WARNING: [Synth 8-3295] tying undriven pin top_show_high_low:an2[2] to constant 0 [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:55]
+WARNING: [Synth 8-3295] tying undriven pin top_show_high_low:an2[1] to constant 0 [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:55]
+WARNING: [Synth 8-3295] tying undriven pin top_show_high_low:an2[0] to constant 0 [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:55]
+WARNING: [Synth 8-3295] tying undriven pin top_show_high_low:a_to_g1[7] to constant 0 [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:55]
+WARNING: [Synth 8-3295] tying undriven pin top_show_high_low:a_to_g1[6] to constant 0 [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:55]
+WARNING: [Synth 8-3295] tying undriven pin top_show_high_low:a_to_g1[5] to constant 0 [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:55]
+WARNING: [Synth 8-3295] tying undriven pin top_show_high_low:a_to_g1[4] to constant 0 [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:55]
+WARNING: [Synth 8-3295] tying undriven pin top_show_high_low:a_to_g1[3] to constant 0 [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:55]
+WARNING: [Synth 8-3295] tying undriven pin top_show_high_low:a_to_g1[2] to constant 0 [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:55]
+WARNING: [Synth 8-3295] tying undriven pin top_show_high_low:a_to_g1[1] to constant 0 [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:55]
+WARNING: [Synth 8-3295] tying undriven pin top_show_high_low:a_to_g1[0] to constant 0 [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:55]
+WARNING: [Synth 8-3295] tying undriven pin top_show_high_low:a_to_g2[7] to constant 0 [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:55]
+WARNING: [Synth 8-3295] tying undriven pin top_show_high_low:a_to_g2[6] to constant 0 [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:55]
+WARNING: [Synth 8-3295] tying undriven pin top_show_high_low:a_to_g2[5] to constant 0 [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:55]
+WARNING: [Synth 8-3295] tying undriven pin top_show_high_low:a_to_g2[4] to constant 0 [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:55]
+WARNING: [Synth 8-3295] tying undriven pin top_show_high_low:a_to_g2[3] to constant 0 [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:55]
+WARNING: [Synth 8-3295] tying undriven pin top_show_high_low:a_to_g2[2] to constant 0 [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:55]
+WARNING: [Synth 8-3295] tying undriven pin top_show_high_low:a_to_g2[1] to constant 0 [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:55]
+WARNING: [Synth 8-3295] tying undriven pin top_show_high_low:a_to_g2[0] to constant 0 [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/new/top_XADC_voltage.v:55]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2276.516 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2276.516 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.dcp' for cell 'top_xadc/u1'
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 4 IBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.xdc] for cell 'top_xadc/u1/inst'
+Finished Parsing XDC File [d:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.xdc] for cell 'top_xadc/u1/inst'
+Parsing XDC File [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/constrs_1/new/XADC_voltage.xdc]
+Finished Parsing XDC File [D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.srcs/constrs_1/new/XADC_voltage.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2350.957 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2394.805 ; gain = 118.289
+23 Infos, 37 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/project_practice_week10_on_class/XADC/XADC.runs/impl_1/top_XADC_voltage.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat May 25 19:47:30 2024...
