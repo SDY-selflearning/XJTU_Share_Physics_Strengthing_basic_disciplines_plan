@@ -1,0 +1,167 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date             : Wed Jun  5 10:06:08 2024
+| Host             : LAPTOP-CCNJK6NK running 64-bit major release  (build 9200)
+| Command          : report_power -file top_dds_power_routed.rpt -pb top_dds_power_summary_routed.pb -rpx top_dds_power_routed.rpx
+| Design           : top_dds
+| Device           : xc7a35tcsg324-1
+| Design State     : routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+-----------------------------------+
+| Total On-Chip Power (W)  | 219.925 (Junction temp exceeded!) |
+| Design Power Budget (W)  | Unspecified*                      |
+| Power Budget Margin (W)  | NA                                |
+| Dynamic (W)              | 219.439                           |
+| Device Static (W)        | 0.486                             |
+| Effective TJA (C/W)      | 4.8                               |
+| Max Ambient (C)          | 0.0                               |
+| Junction Temperature (C) | 125.0                             |
+| Confidence Level         | Low                               |
+| Setting File             | ---                               |
+| Simulation Activity File | ---                               |
+| Design Nets Matched      | NA                                |
++--------------------------+-----------------------------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++----------------+-----------+----------+-----------+-----------------+
+| On-Chip        | Power (W) | Used     | Available | Utilization (%) |
++----------------+-----------+----------+-----------+-----------------+
+| Slice Logic    |    83.164 |     8363 |       --- |             --- |
+|   LUT as Logic |    76.955 |     5184 |     20800 |           24.92 |
+|   CARRY4       |     6.020 |     1068 |      8150 |           13.10 |
+|   Register     |     0.132 |      439 |     41600 |            1.06 |
+|   F7/F8 Muxes  |     0.051 |       40 |     32600 |            0.12 |
+|   BUFG         |     0.006 |        1 |        32 |            3.13 |
+|   Others       |     0.000 |       48 |       --- |             --- |
+| Signals        |    68.930 |     7640 |       --- |             --- |
+| DSPs           |    21.492 |       26 |        90 |           28.89 |
+| I/O            |    45.732 |       48 |       210 |           22.86 |
+| XADC           |     0.121 |        1 |       --- |             --- |
+| Static Power   |     0.486 |          |           |                 |
+| Total          |   219.925 |          |           |                 |
++----------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++-----------+-------------+-----------+-------------+------------+
+| Vccint    |       1.000 |   173.990 |     173.649 |      0.341 |
+| Vccaux    |       1.800 |     1.728 |       1.675 |      0.053 |
+| Vcco33    |       3.300 |    12.936 |      12.935 |      0.001 |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
+| Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.010 |       0.000 |      0.010 |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccadc    |       1.800 |     0.070 |       0.050 |      0.020 |
++-----------+-------------+-----------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                             |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                                    |
+| Clock nodes activity        | Low        | User specified less than 75% of clocks                 | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
+| Device models               | High       | Device models are Production                           |                                                                                                                    |
+|                             |            |                                                        |                                                                                                                    |
+| Overall confidence level    | Low        |                                                        |                                                                                                                    |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 4.8                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 4.6                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++-------+--------+-----------------+
+| Clock | Domain | Constraint (ns) |
++-------+--------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++--------------------------+-----------+
+| Name                     | Power (W) |
++--------------------------+-----------+
+| top_dds                  |   219.439 |
+|   uut_top_key_and_FSM    |     4.123 |
+|     uut_FSM_5key         |     1.558 |
+|     uut_get_5key         |     2.565 |
+|       u_key_amplitude    |     0.486 |
+|       u_key_duty         |     0.520 |
+|       u_key_frequence    |     0.496 |
+|       u_key_offset       |     0.491 |
+|       u_key_wave         |     0.572 |
+|   uut_top_wave           |   163.817 |
+|     uut_XADC_to_data     |     1.309 |
+|       uut_XADC_channel_1 |     0.137 |
+|       uut_bin2BCD        |     0.325 |
+|       uut_data_output    |     0.171 |
+|       uut_show_high_low  |     0.676 |
+|     uut_pulse            |     8.936 |
+|     uut_wave             |   153.573 |
+|       uut_select_wave    |     0.170 |
+|       uut_sine_wave      |    47.633 |
+|       uut_square_wave    |    58.956 |
+|       uut_triangle_wave  |    46.814 |
++--------------------------+-----------+
+
+

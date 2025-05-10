@@ -1,0 +1,206 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Jun  3 08:27:52 2024
+# Process ID: 3756
+# Current directory: D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16752 D:\my_homework\my_vivado_practice\DDSwave_geneator\dds_wave_generator\dds_wave_generator.xpr
+# Log file: D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/vivado.log
+# Journal file: D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 747.188 ; gain = 127.945
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcsg324-1
+Top: top_dds
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 943.488 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_dds' [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/top_dds.v:23]
+INFO: [Synth 8-6157] synthesizing module 'top_wave' [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/top_square.v:23]
+WARNING: [Synth 8-6104] Input port 'ILE' has an internal driver [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/top_square.v:51]
+WARNING: [Synth 8-6104] Input port 'CS_n' has an internal driver [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/top_square.v:52]
+WARNING: [Synth 8-6104] Input port 'WR1_n' has an internal driver [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/top_square.v:53]
+WARNING: [Synth 8-6104] Input port 'WR2_n' has an internal driver [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/top_square.v:54]
+WARNING: [Synth 8-6104] Input port 'XFER_n' has an internal driver [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/top_square.v:55]
+INFO: [Synth 8-6157] synthesizing module 'XADC_to_data' [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/XADC_to_data.v:23]
+INFO: [Synth 8-6157] synthesizing module 'XADC_channel_1' [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/XADC_channel_1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'xadc_wiz_0' [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/.Xil/Vivado-3756-LAPTOP-CCNJK6NK/realtime/xadc_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'xadc_wiz_0' (1#1) [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/.Xil/Vivado-3756-LAPTOP-CCNJK6NK/realtime/xadc_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'XADC_channel_1' (2#1) [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/XADC_channel_1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'data_output' [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/data_output.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'data_output' (3#1) [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/data_output.v:23]
+INFO: [Synth 8-6157] synthesizing module 'bin2BCD' [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/bin2BCD.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bin2BCD' (4#1) [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/bin2BCD.v:23]
+INFO: [Synth 8-6157] synthesizing module 'show_high_low' [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/show_high_low.v:23]
+INFO: [Synth 8-6157] synthesizing module 'convert' [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/convert.v:23]
+WARNING: [Synth 8-5788] Register data_show_reg in module convert is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/convert.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'convert' (5#1) [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/convert.v:23]
+INFO: [Synth 8-6157] synthesizing module 'show_4_digit' [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/show_4_digit.v:23]
+INFO: [Synth 8-226] default block is never used [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/show_4_digit.v:44]
+INFO: [Synth 8-226] default block is never used [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/show_4_digit.v:55]
+INFO: [Synth 8-226] default block is never used [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/show_4_digit.v:66]
+INFO: [Synth 8-6155] done synthesizing module 'show_4_digit' (6#1) [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/show_4_digit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'show_high_low' (7#1) [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/show_high_low.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'XADC_to_data' (8#1) [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/XADC_to_data.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pulse' [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/pulse.v:23]
+	Parameter total bound to: 100000000 - type: integer 
+	Parameter sam_freq bound to: 256 - type: integer 
+WARNING: [Synth 8-5788] Register period_reg in module pulse is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/pulse.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'pulse' (9#1) [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/pulse.v:23]
+INFO: [Synth 8-6157] synthesizing module 'wave' [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/wave.v:23]
+INFO: [Synth 8-6157] synthesizing module 'square_wave' [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/square_wave.v:23]
+	Parameter period bound to: 255 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'square_wave' (10#1) [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/square_wave.v:23]
+INFO: [Synth 8-6157] synthesizing module 'sine_wave' [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/sin_wave.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dist_mem_gen_0' [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/.Xil/Vivado-3756-LAPTOP-CCNJK6NK/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dist_mem_gen_0' (11#1) [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/.Xil/Vivado-3756-LAPTOP-CCNJK6NK/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'sine_wave' (12#1) [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/sin_wave.v:23]
+INFO: [Synth 8-6157] synthesizing module 'triangle_wave' [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/triangle_wave.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'triangle_wave' (13#1) [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/triangle_wave.v:23]
+INFO: [Synth 8-6157] synthesizing module 'select_wave' [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/select_wave.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'select_wave' (14#1) [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/select_wave.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'wave' (15#1) [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/wave.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top_wave' (16#1) [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/top_square.v:23]
+INFO: [Synth 8-6157] synthesizing module 'top_key_and_FSM' [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/top_key_and_FSM.v:23]
+INFO: [Synth 8-6157] synthesizing module 'get_5key' [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/get_5key.v:23]
+INFO: [Synth 8-6157] synthesizing module 'key_debounce' [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/key_debounce.v:23]
+	Parameter DELAY_YIME bound to: 21'b101101110001101100000 
+WARNING: [Synth 8-6014] Unused sequential element key_value_reg was removed.  [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/key_debounce.v:50]
+WARNING: [Synth 8-6014] Unused sequential element key_n_flag_reg was removed.  [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/key_debounce.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'key_debounce' (17#1) [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/key_debounce.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'get_5key' (18#1) [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/get_5key.v:23]
+INFO: [Synth 8-6157] synthesizing module 'FSM_5key' [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/FSM_5key.v:23]
+	Parameter SQUARE bound to: 4'b0000 
+	Parameter SQUARE_FREQUENCE bound to: 4'b0001 
+	Parameter SQUARE_AMPLITUDE bound to: 4'b0010 
+	Parameter SQUARE_OFFSET bound to: 4'b0011 
+	Parameter SQUARE_DUTY bound to: 4'b0100 
+	Parameter SINE bound to: 4'b0101 
+	Parameter SINE_FREQUENCE bound to: 4'b0110 
+	Parameter SINE_AMPLITUDE bound to: 4'b0111 
+	Parameter SINE_OFFSET bound to: 4'b1000 
+	Parameter TRIANGLE bound to: 4'b1001 
+	Parameter TRIANGLE_FREQUENCE bound to: 4'b1010 
+	Parameter TRIANGLE_AMPLITUDE bound to: 4'b1011 
+	Parameter TRIANGLE_OFFSET bound to: 4'b1100 
+INFO: [Synth 8-6155] done synthesizing module 'FSM_5key' (19#1) [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/FSM_5key.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top_key_and_FSM' (20#1) [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/top_key_and_FSM.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top_dds' (21#1) [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/top_dds.v:23]
+WARNING: [Synth 8-3331] design convert has unconnected port bcd[31]
+WARNING: [Synth 8-3331] design convert has unconnected port bcd[30]
+WARNING: [Synth 8-3331] design convert has unconnected port bcd[29]
+WARNING: [Synth 8-3331] design convert has unconnected port bcd[28]
+WARNING: [Synth 8-3331] design convert has unconnected port bcd[15]
+WARNING: [Synth 8-3331] design convert has unconnected port bcd[14]
+WARNING: [Synth 8-3331] design convert has unconnected port bcd[13]
+WARNING: [Synth 8-3331] design convert has unconnected port bcd[12]
+WARNING: [Synth 8-3331] design convert has unconnected port bcd[11]
+WARNING: [Synth 8-3331] design convert has unconnected port bcd[10]
+WARNING: [Synth 8-3331] design convert has unconnected port bcd[9]
+WARNING: [Synth 8-3331] design convert has unconnected port bcd[8]
+WARNING: [Synth 8-3331] design convert has unconnected port bcd[7]
+WARNING: [Synth 8-3331] design convert has unconnected port bcd[6]
+WARNING: [Synth 8-3331] design convert has unconnected port bcd[5]
+WARNING: [Synth 8-3331] design convert has unconnected port bcd[4]
+WARNING: [Synth 8-3331] design convert has unconnected port bcd[3]
+WARNING: [Synth 8-3331] design convert has unconnected port bcd[2]
+WARNING: [Synth 8-3331] design convert has unconnected port bcd[1]
+WARNING: [Synth 8-3331] design convert has unconnected port bcd[0]
+WARNING: [Synth 8-3331] design data_output has unconnected port do_out[3]
+WARNING: [Synth 8-3331] design data_output has unconnected port do_out[2]
+WARNING: [Synth 8-3331] design data_output has unconnected port do_out[1]
+WARNING: [Synth 8-3331] design data_output has unconnected port do_out[0]
+WARNING: [Synth 8-3331] design top_wave has unconnected port ILE
+WARNING: [Synth 8-3331] design top_wave has unconnected port CS_n
+WARNING: [Synth 8-3331] design top_wave has unconnected port WR1_n
+WARNING: [Synth 8-3331] design top_wave has unconnected port WR2_n
+WARNING: [Synth 8-3331] design top_wave has unconnected port XFER_n
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 943.488 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 943.488 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 943.488 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.dcp' for cell 'uut_top_wave/uut_XADC_to_data/uut_XADC_channel_1/u1'
+INFO: [Project 1-454] Reading design checkpoint 'd:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.dcp' for cell 'uut_top_wave/uut_wave/uut_sine_wave/u_sin_wave'
+INFO: [Netlist 29-17] Analyzing 17 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 3 IBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.xdc] for cell 'uut_top_wave/uut_XADC_to_data/uut_XADC_channel_1/u1/inst'
+Finished Parsing XDC File [d:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.xdc] for cell 'uut_top_wave/uut_XADC_to_data/uut_XADC_channel_1/u1/inst'
+Parsing XDC File [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/constrs_1/new/XADC_voltage.xdc]
+Finished Parsing XDC File [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/constrs_1/new/XADC_voltage.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1223.547 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 1256.473 ; gain = 312.984
+55 Infos, 38 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 1256.473 ; gain = 312.984
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.xci' is already up-to-date
+[Mon Jun  3 10:40:54 2024] Launched impl_1...
+Run output will be captured here: D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.runs/impl_1/top_dds.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.runs/impl_1/top_dds.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jun  3 12:17:13 2024...

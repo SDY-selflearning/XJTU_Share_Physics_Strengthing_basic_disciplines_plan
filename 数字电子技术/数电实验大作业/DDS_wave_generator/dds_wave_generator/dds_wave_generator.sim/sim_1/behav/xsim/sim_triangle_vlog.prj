@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../dds_wave_generator.srcs/sources_1/new/triangle_wave.v" \
+"../../../../dds_wave_generator.srcs/sim_1/new/sim_triangle.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

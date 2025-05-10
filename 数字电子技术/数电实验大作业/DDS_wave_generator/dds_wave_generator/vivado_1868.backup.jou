@@ -1,0 +1,349 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Jun  2 11:00:49 2024
+# Process ID: 1868
+# Current directory: D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21160 D:\my_homework\my_vivado_practice\DDSwave_geneator\dds_wave_generator\dds_wave_generator.xpr
+# Log file: D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/vivado.log
+# Journal file: D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.runs/impl_1/top_dds.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.runs/impl_1/top_dds.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.runs/impl_1/top_dds.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.runs/impl_1/top_dds.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw
+add_files -norecurse {D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/FSM_5key.v D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/get_5key.v D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/top_key_and_FSM.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.runs/impl_1/top_dds.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.runs/impl_1/top_dds.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw
+export_ip_user_files -of_objects  [get_files D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/top_dds_wave_generator.v] -no_script -reset -force -quiet
+remove_files  D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/top_dds_wave_generator.v
+file delete -force D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/top_dds_wave_generator.v
+synth_design -rtl -name rtl_1
+export_ip_user_files -of_objects  [get_files D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/get_key.v] -no_script -reset -force -quiet
+remove_files  D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/get_key.v
+file delete -force D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/get_key.v
+export_ip_user_files -of_objects  [get_files D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/FSM.v] -no_script -reset -force -quiet
+remove_files  D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/FSM.v
+file delete -force D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/FSM.v
+close [ open D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/show_4_digit.v w ]
+add_files D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/show_4_digit.v
+update_compile_order -fileset sources_1
+add_files -norecurse D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/show_high_low.v
+update_compile_order -fileset sources_1
+close [ open D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/convert.v w ]
+add_files D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/convert.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.runs/impl_1/top_dds.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.runs/impl_1/top_dds.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.runs/impl_1/top_dds.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sim_1/new/sim_show_high_low.v w ]
+add_files -fileset sim_1 D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sim_1/new/sim_show_high_low.v
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top sim_show_high_low [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.runs/impl_1/top_dds.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.runs/impl_1/top_dds.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.runs/impl_1/top_dds.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.runs/impl_1/top_dds.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.runs/impl_1/top_dds.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.runs/impl_1/top_dds.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.runs/impl_1/top_dds.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.runs/impl_1/top_dds.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.runs/impl_1/top_dds.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.runs/impl_1/top_dds.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.runs/impl_1/top_dds.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.runs/impl_1/top_dds.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw
+synth_design -rtl -name rtl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.runs/impl_1/top_dds.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.runs/impl_1/top_dds.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+refresh_design
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.runs/impl_1/top_dds.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.runs/impl_1/top_dds.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.runs/impl_1/top_dds.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.runs/impl_1/top_dds.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.runs/impl_1/top_dds.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.runs/impl_1/top_dds.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.runs/impl_1/top_dds.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.runs/impl_1/top_dds.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.runs/impl_1/top_dds.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.runs/impl_1/top_dds.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.runs/impl_1/top_dds.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.runs/impl_1/top_dds.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw
+close_design
+synth_design -rtl -name rtl_1

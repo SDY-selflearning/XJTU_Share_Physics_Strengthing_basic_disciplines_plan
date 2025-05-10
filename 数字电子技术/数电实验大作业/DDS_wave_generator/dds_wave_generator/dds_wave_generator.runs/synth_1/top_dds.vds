@@ -1,0 +1,748 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Jun  5 10:02:02 2024
+# Process ID: 19624
+# Current directory: D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.runs/synth_1
+# Command line: vivado.exe -log top_dds.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_dds.tcl
+# Log file: D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.runs/synth_1/top_dds.vds
+# Journal file: D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top_dds.tcl -notrace
+Command: synth_design -top top_dds -part xc7a35tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 18484 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 394.207 ; gain = 100.730
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_dds' [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/top_dds.v:23]
+INFO: [Synth 8-6157] synthesizing module 'top_wave' [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/top_square.v:23]
+WARNING: [Synth 8-6104] Input port 'ILE' has an internal driver [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/top_square.v:51]
+WARNING: [Synth 8-6104] Input port 'CS_n' has an internal driver [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/top_square.v:52]
+WARNING: [Synth 8-6104] Input port 'WR1_n' has an internal driver [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/top_square.v:53]
+WARNING: [Synth 8-6104] Input port 'WR2_n' has an internal driver [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/top_square.v:54]
+WARNING: [Synth 8-6104] Input port 'XFER_n' has an internal driver [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/top_square.v:55]
+INFO: [Synth 8-6157] synthesizing module 'XADC_to_data' [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/XADC_to_data.v:23]
+INFO: [Synth 8-6157] synthesizing module 'XADC_channel_1' [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/XADC_channel_1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'xadc_wiz_0' [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.runs/synth_1/.Xil/Vivado-19624-LAPTOP-CCNJK6NK/realtime/xadc_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'xadc_wiz_0' (1#1) [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.runs/synth_1/.Xil/Vivado-19624-LAPTOP-CCNJK6NK/realtime/xadc_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'XADC_channel_1' (2#1) [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/XADC_channel_1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'data_output' [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/data_output.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'data_output' (3#1) [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/data_output.v:23]
+INFO: [Synth 8-6157] synthesizing module 'bin2BCD' [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/bin2BCD.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bin2BCD' (4#1) [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/bin2BCD.v:23]
+INFO: [Synth 8-6157] synthesizing module 'show_high_low' [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/show_high_low.v:23]
+INFO: [Synth 8-6157] synthesizing module 'convert' [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/convert.v:23]
+WARNING: [Synth 8-5788] Register data_show_reg in module convert is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/convert.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'convert' (5#1) [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/convert.v:23]
+INFO: [Synth 8-6157] synthesizing module 'show_4_digit' [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/show_4_digit.v:23]
+INFO: [Synth 8-226] default block is never used [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/show_4_digit.v:44]
+INFO: [Synth 8-226] default block is never used [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/show_4_digit.v:55]
+INFO: [Synth 8-226] default block is never used [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/show_4_digit.v:66]
+INFO: [Synth 8-6155] done synthesizing module 'show_4_digit' (6#1) [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/show_4_digit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'show_high_low' (7#1) [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/show_high_low.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'XADC_to_data' (8#1) [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/XADC_to_data.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pulse' [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/pulse.v:23]
+	Parameter total bound to: 100000000 - type: integer 
+	Parameter sam_freq bound to: 256 - type: integer 
+WARNING: [Synth 8-5788] Register period_reg in module pulse is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/pulse.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'pulse' (9#1) [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/pulse.v:23]
+INFO: [Synth 8-6157] synthesizing module 'wave' [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/wave.v:23]
+INFO: [Synth 8-6157] synthesizing module 'square_wave' [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/square_wave.v:23]
+	Parameter period bound to: 255 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'square_wave' (10#1) [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/square_wave.v:23]
+INFO: [Synth 8-6157] synthesizing module 'sine_wave' [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/sin_wave.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dist_mem_gen_0' [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.runs/synth_1/.Xil/Vivado-19624-LAPTOP-CCNJK6NK/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dist_mem_gen_0' (11#1) [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.runs/synth_1/.Xil/Vivado-19624-LAPTOP-CCNJK6NK/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'sine_wave' (12#1) [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/sin_wave.v:23]
+INFO: [Synth 8-6157] synthesizing module 'triangle_wave' [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/triangle_wave.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'triangle_wave' (13#1) [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/triangle_wave.v:23]
+INFO: [Synth 8-6157] synthesizing module 'select_wave' [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/select_wave.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'select_wave' (14#1) [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/select_wave.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'wave' (15#1) [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/wave.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top_wave' (16#1) [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/top_square.v:23]
+INFO: [Synth 8-6157] synthesizing module 'top_key_and_FSM' [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/top_key_and_FSM.v:23]
+INFO: [Synth 8-6157] synthesizing module 'get_5key' [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/get_5key.v:23]
+INFO: [Synth 8-6157] synthesizing module 'key_debounce' [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/key_debounce.v:23]
+	Parameter DELAY_YIME bound to: 21'b101101110001101100000 
+WARNING: [Synth 8-6014] Unused sequential element key_value_reg was removed.  [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/key_debounce.v:50]
+WARNING: [Synth 8-6014] Unused sequential element key_n_flag_reg was removed.  [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/key_debounce.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'key_debounce' (17#1) [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/key_debounce.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'get_5key' (18#1) [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/get_5key.v:23]
+INFO: [Synth 8-6157] synthesizing module 'FSM_5key' [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/FSM_5key.v:23]
+	Parameter SQUARE bound to: 4'b0000 
+	Parameter SQUARE_FREQUENCE bound to: 4'b0001 
+	Parameter SQUARE_AMPLITUDE bound to: 4'b0010 
+	Parameter SQUARE_OFFSET bound to: 4'b0011 
+	Parameter SQUARE_DUTY bound to: 4'b0100 
+	Parameter SINE bound to: 4'b0101 
+	Parameter SINE_FREQUENCE bound to: 4'b0110 
+	Parameter SINE_AMPLITUDE bound to: 4'b0111 
+	Parameter SINE_OFFSET bound to: 4'b1000 
+	Parameter TRIANGLE bound to: 4'b1001 
+	Parameter TRIANGLE_FREQUENCE bound to: 4'b1010 
+	Parameter TRIANGLE_AMPLITUDE bound to: 4'b1011 
+	Parameter TRIANGLE_OFFSET bound to: 4'b1100 
+INFO: [Synth 8-6155] done synthesizing module 'FSM_5key' (19#1) [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/FSM_5key.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top_key_and_FSM' (20#1) [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/top_key_and_FSM.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top_dds' (21#1) [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/top_dds.v:23]
+WARNING: [Synth 8-3331] design convert has unconnected port bcd[31]
+WARNING: [Synth 8-3331] design convert has unconnected port bcd[30]
+WARNING: [Synth 8-3331] design convert has unconnected port bcd[29]
+WARNING: [Synth 8-3331] design convert has unconnected port bcd[28]
+WARNING: [Synth 8-3331] design convert has unconnected port bcd[15]
+WARNING: [Synth 8-3331] design convert has unconnected port bcd[14]
+WARNING: [Synth 8-3331] design convert has unconnected port bcd[13]
+WARNING: [Synth 8-3331] design convert has unconnected port bcd[12]
+WARNING: [Synth 8-3331] design convert has unconnected port bcd[11]
+WARNING: [Synth 8-3331] design convert has unconnected port bcd[10]
+WARNING: [Synth 8-3331] design convert has unconnected port bcd[9]
+WARNING: [Synth 8-3331] design convert has unconnected port bcd[8]
+WARNING: [Synth 8-3331] design convert has unconnected port bcd[7]
+WARNING: [Synth 8-3331] design convert has unconnected port bcd[6]
+WARNING: [Synth 8-3331] design convert has unconnected port bcd[5]
+WARNING: [Synth 8-3331] design convert has unconnected port bcd[4]
+WARNING: [Synth 8-3331] design convert has unconnected port bcd[3]
+WARNING: [Synth 8-3331] design convert has unconnected port bcd[2]
+WARNING: [Synth 8-3331] design convert has unconnected port bcd[1]
+WARNING: [Synth 8-3331] design convert has unconnected port bcd[0]
+WARNING: [Synth 8-3331] design data_output has unconnected port do_out[3]
+WARNING: [Synth 8-3331] design data_output has unconnected port do_out[2]
+WARNING: [Synth 8-3331] design data_output has unconnected port do_out[1]
+WARNING: [Synth 8-3331] design data_output has unconnected port do_out[0]
+WARNING: [Synth 8-3331] design top_wave has unconnected port ILE
+WARNING: [Synth 8-3331] design top_wave has unconnected port CS_n
+WARNING: [Synth 8-3331] design top_wave has unconnected port WR1_n
+WARNING: [Synth 8-3331] design top_wave has unconnected port WR2_n
+WARNING: [Synth 8-3331] design top_wave has unconnected port XFER_n
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 449.758 ; gain = 156.281
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 449.758 ; gain = 156.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 449.758 ; gain = 156.281
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0/dist_mem_gen_0_in_context.xdc] for cell 'uut_top_wave/uut_wave/uut_sine_wave/u_sin_wave'
+Finished Parsing XDC File [d:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0/dist_mem_gen_0_in_context.xdc] for cell 'uut_top_wave/uut_wave/uut_sine_wave/u_sin_wave'
+Parsing XDC File [d:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0/xadc_wiz_0_in_context.xdc] for cell 'uut_top_wave/uut_XADC_to_data/uut_XADC_channel_1/u1'
+Finished Parsing XDC File [d:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0/xadc_wiz_0_in_context.xdc] for cell 'uut_top_wave/uut_XADC_to_data/uut_XADC_channel_1/u1'
+Parsing XDC File [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/constrs_1/new/XADC_voltage.xdc]
+Finished Parsing XDC File [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/constrs_1/new/XADC_voltage.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/constrs_1/new/XADC_voltage.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_dds_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_dds_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.runs/synth_1/dont_touch.xdc]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 783.914 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 783.914 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 783.914 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 783.914 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 783.914 ; gain = 490.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 783.914 ; gain = 490.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for uut_top_wave/uut_wave/uut_sine_wave/u_sin_wave. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for uut_top_wave/uut_XADC_to_data/uut_XADC_channel_1/u1. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 783.914 ; gain = 490.438
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "led" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/bin2BCD.v:29]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/pulse.v:45]
+INFO: [Synth 8-5544] ROM "nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "square" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sine" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "triangle" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "frequence" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "offset" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "amplitude" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "duty" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 783.914 ; gain = 490.438
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input     21 Bit       Adders := 5     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 6     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               21 Bit    Registers := 5     
+	               16 Bit    Registers := 1     
+	               14 Bit    Registers := 8     
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 5     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 20    
++---Multipliers : 
+	                21x32  Multipliers := 3     
+	                16x32  Multipliers := 3     
+	                12x32  Multipliers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     21 Bit        Muxes := 10    
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 12    
+	   2 Input     13 Bit        Muxes := 12    
+	   2 Input     12 Bit        Muxes := 2     
+	  17 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 7     
+	   7 Input      4 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 5     
+	   2 Input      4 Bit        Muxes := 13    
+	   4 Input      4 Bit        Muxes := 2     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 33    
+	   8 Input      1 Bit        Muxes := 1     
+	  14 Input      1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module data_output 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module bin2BCD 
+Detailed RTL Component Info : 
++---Muxes : 
+	   7 Input      4 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
+Module convert 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 1     
+Module show_4_digit 
+Detailed RTL Component Info : 
++---Muxes : 
+	  17 Input      8 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+Module pulse 
+Detailed RTL Component Info : 
++---Registers : 
+	               14 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 3     
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+Module square_wave 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               14 Bit    Registers := 3     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Multipliers : 
+	                21x32  Multipliers := 1     
+	                16x32  Multipliers := 1     
+	                12x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 3     
+	   2 Input     13 Bit        Muxes := 6     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 12    
+Module sine_wave 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               14 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
++---Multipliers : 
+	                21x32  Multipliers := 1     
+	                16x32  Multipliers := 1     
+	                12x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 3     
+	   2 Input     13 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 6     
+Module triangle_wave 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               14 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Multipliers : 
+	                21x32  Multipliers := 1     
+	                16x32  Multipliers := 1     
+	                12x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 3     
+	   2 Input     13 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 10    
+Module select_wave 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 3     
+Module key_debounce 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     21 Bit       Adders := 1     
++---Registers : 
+	               21 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     21 Bit        Muxes := 2     
+Module FSM_5key 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   5 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 5     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 2     
+	  14 Input      1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+DSP Report: Generating DSP binary20, operation Mode is: (A:0xf4240)*B.
+DSP Report: operator binary20 is absorbed into DSP binary20.
+DSP Report: operator binary20 is absorbed into DSP binary20.
+INFO: [Synth 8-5546] ROM "uut_data_output/led" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/square_wave.v:79]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/square_wave.v:77]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/square_wave.v:75]
+DSP Report: Generating DSP flag4, operation Mode is: A*(B:0xff).
+DSP Report: operator flag4 is absorbed into DSP flag4.
+DSP Report: Generating DSP offset2, operation Mode is: A*(B:0xff).
+DSP Report: operator offset2 is absorbed into DSP offset2.
+DSP Report: Generating DSP offset1, operation Mode is: A*B.
+DSP Report: operator offset1 is absorbed into DSP offset1.
+DSP Report: operator offset1 is absorbed into DSP offset1.
+DSP Report: Generating DSP offset1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator offset1 is absorbed into DSP offset1.
+DSP Report: operator offset1 is absorbed into DSP offset1.
+DSP Report: Generating DSP offset1, operation Mode is: A*B.
+DSP Report: operator offset1 is absorbed into DSP offset1.
+DSP Report: operator offset1 is absorbed into DSP offset1.
+DSP Report: Generating DSP offset1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator offset1 is absorbed into DSP offset1.
+DSP Report: operator offset1 is absorbed into DSP offset1.
+DSP Report: Generating DSP offset1, operation Mode is: A*B.
+DSP Report: operator offset1 is absorbed into DSP offset1.
+DSP Report: operator offset1 is absorbed into DSP offset1.
+DSP Report: Generating DSP offset1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator offset1 is absorbed into DSP offset1.
+DSP Report: operator offset1 is absorbed into DSP offset1.
+DSP Report: Generating DSP data2, operation Mode is: A*(B:0xff).
+DSP Report: operator data2 is absorbed into DSP data2.
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/sin_wave.v:61]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/sin_wave.v:59]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/sin_wave.v:57]
+DSP Report: Generating DSP offset2, operation Mode is: A*(B:0xff).
+DSP Report: operator offset2 is absorbed into DSP offset2.
+DSP Report: Generating DSP offset1, operation Mode is: A*B.
+DSP Report: operator offset1 is absorbed into DSP offset1.
+DSP Report: operator offset1 is absorbed into DSP offset1.
+DSP Report: Generating DSP offset1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator offset1 is absorbed into DSP offset1.
+DSP Report: operator offset1 is absorbed into DSP offset1.
+DSP Report: Generating DSP offset1, operation Mode is: A*B.
+DSP Report: operator offset1 is absorbed into DSP offset1.
+DSP Report: operator offset1 is absorbed into DSP offset1.
+DSP Report: Generating DSP offset1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator offset1 is absorbed into DSP offset1.
+DSP Report: operator offset1 is absorbed into DSP offset1.
+DSP Report: Generating DSP offset1, operation Mode is: A*B.
+DSP Report: operator offset1 is absorbed into DSP offset1.
+DSP Report: operator offset1 is absorbed into DSP offset1.
+DSP Report: Generating DSP offset1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator offset1 is absorbed into DSP offset1.
+DSP Report: operator offset1 is absorbed into DSP offset1.
+DSP Report: Generating DSP data1, operation Mode is: A*B.
+DSP Report: operator data1 is absorbed into DSP data1.
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/triangle_wave.v:62]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/triangle_wave.v:60]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/triangle_wave.v:58]
+DSP Report: Generating DSP offset2, operation Mode is: A*(B:0xff).
+DSP Report: operator offset2 is absorbed into DSP offset2.
+DSP Report: Generating DSP offset1, operation Mode is: A*B.
+DSP Report: operator offset1 is absorbed into DSP offset1.
+DSP Report: operator offset1 is absorbed into DSP offset1.
+DSP Report: Generating DSP offset1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator offset1 is absorbed into DSP offset1.
+DSP Report: operator offset1 is absorbed into DSP offset1.
+DSP Report: Generating DSP offset1, operation Mode is: A*B.
+DSP Report: operator offset1 is absorbed into DSP offset1.
+DSP Report: operator offset1 is absorbed into DSP offset1.
+DSP Report: Generating DSP offset1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator offset1 is absorbed into DSP offset1.
+DSP Report: operator offset1 is absorbed into DSP offset1.
+DSP Report: Generating DSP offset1, operation Mode is: A*B.
+DSP Report: operator offset1 is absorbed into DSP offset1.
+DSP Report: operator offset1 is absorbed into DSP offset1.
+DSP Report: Generating DSP offset1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator offset1 is absorbed into DSP offset1.
+DSP Report: operator offset1 is absorbed into DSP offset1.
+DSP Report: Generating DSP data1, operation Mode is: A*B.
+DSP Report: operator data1 is absorbed into DSP data1.
+WARNING: [Synth 8-3331] design top_wave has unconnected port ILE
+WARNING: [Synth 8-3331] design top_wave has unconnected port CS_n
+WARNING: [Synth 8-3331] design top_wave has unconnected port WR1_n
+WARNING: [Synth 8-3331] design top_wave has unconnected port WR2_n
+WARNING: [Synth 8-3331] design top_wave has unconnected port XFER_n
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uut_top_wave/uut_pulse/frequence_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uut_top_wave/uut_wave/uut_square_wave /\duty_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uut_top_wave/uut_wave/uut_square_wave /\amplitude_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uut_top_wave/uut_wave/uut_sine_wave /\amplitude_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uut_top_wave/uut_wave/uut_triangle_wave /\amplitude_reg[13] )
+INFO: [Synth 8-3886] merging instance 'uut_top_wave/uut_XADC_to_data/uut_show_high_low/uut_convert/data_show_reg[31]' (FDPE) to 'uut_top_wave/uut_XADC_to_data/uut_show_high_low/uut_convert/data_show_reg[29]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uut_top_wave/uut_pulse/frequence_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\uut_top_wave/uut_XADC_to_data/uut_show_high_low/uut_convert/data_show_reg[7]_P )
+WARNING: [Synth 8-3332] Sequential element (uut_top_wave/uut_XADC_to_data/uut_show_high_low/uut_convert/data_show_reg[7]_P) is unused and will be removed from module top_dds.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 783.914 ; gain = 490.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++--------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name   | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|bin2BCD       | (A:0xf4240)*B  | 21     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|square_wave   | A*(B:0xff)     | 14     | 8      | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|square_wave   | A*(B:0xff)     | 13     | 8      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|square_wave   | A*B            | 22     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|square_wave   | (PCIN>>17)+A*B | 22     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|square_wave   | A*B            | 18     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|square_wave   | (PCIN>>17)+A*B | 17     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|square_wave   | A*B            | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|square_wave   | (PCIN>>17)+A*B | 16     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|square_wave   | A*(B:0xff)     | 14     | 8      | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sine_wave     | A*(B:0xff)     | 13     | 8      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sine_wave     | A*B            | 22     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sine_wave     | (PCIN>>17)+A*B | 22     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sine_wave     | A*B            | 18     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sine_wave     | (PCIN>>17)+A*B | 17     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sine_wave     | A*B            | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sine_wave     | (PCIN>>17)+A*B | 16     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sine_wave     | A*B            | 14     | 8      | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_wave | A*(B:0xff)     | 13     | 8      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_wave | A*B            | 22     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_wave | (PCIN>>17)+A*B | 22     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_wave | A*B            | 18     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_wave | (PCIN>>17)+A*B | 17     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_wave | A*B            | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_wave | (PCIN>>17)+A*B | 16     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|triangle_wave | A*B            | 14     | 8      | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++--------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/square_wave.v:45]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/square_wave.v:58]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/square_wave.v:58]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/square_wave.v:58]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/square_wave.v:58]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/sin_wave.v:40]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/sin_wave.v:40]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/sin_wave.v:40]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/sin_wave.v:40]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/triangle_wave.v:41]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/triangle_wave.v:41]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/triangle_wave.v:41]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/triangle_wave.v:41]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/triangle_wave.v:64]
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:48 . Memory (MB): peak = 840.477 ; gain = 547.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:49 . Memory (MB): peak = 847.684 ; gain = 554.207
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'uut_top_wave/uut_wave/uut_square_wave/amplitude_reg[0]' (FDCE) to 'uut_top_wave/uut_wave/uut_sine_wave/amplitude_reg[0]'
+INFO: [Synth 8-3886] merging instance 'uut_top_wave/uut_wave/uut_sine_wave/amplitude_reg[0]' (FDCE) to 'uut_top_wave/uut_wave/uut_triangle_wave/amplitude_reg[0]'
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/data_output.v:45]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/square_wave.v:45]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/wave.v:23]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/wave.v:23]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/wave.v:23]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/wave.v:23]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/wave.v:23]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/wave.v:23]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/wave.v:23]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/wave.v:23]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/wave.v:23]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/wave.v:23]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/wave.v:23]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/wave.v:23]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.srcs/sources_1/new/triangle_wave.v:64]
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:52 . Memory (MB): peak = 945.746 ; gain = 652.270
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:53 . Memory (MB): peak = 945.746 ; gain = 652.270
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:53 . Memory (MB): peak = 945.746 ; gain = 652.270
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:54 . Memory (MB): peak = 945.746 ; gain = 652.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:54 . Memory (MB): peak = 945.746 ; gain = 652.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:54 . Memory (MB): peak = 945.746 ; gain = 652.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:54 . Memory (MB): peak = 945.746 ; gain = 652.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |xadc_wiz_0     |         1|
+|2     |dist_mem_gen_0 |         1|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |dist_mem_gen_0 |     1|
+|2     |xadc_wiz_0     |     1|
+|3     |BUFG           |     1|
+|4     |CARRY4         |  1068|
+|5     |DSP48E1        |    26|
+|6     |LUT1           |   374|
+|7     |LUT2           |  1386|
+|8     |LUT3           |  1857|
+|9     |LUT4           |  1423|
+|10    |LUT5           |   834|
+|11    |LUT6           |   891|
+|12    |MUXF7          |    24|
+|13    |FDCE           |   337|
+|14    |FDPE           |    57|
+|15    |LDC            |    22|
+|16    |IBUF           |     9|
+|17    |OBUF           |    39|
++------+---------------+------+
+
+Report Instance Areas: 
++------+-------------------------+----------------+------+
+|      |Instance                 |Module          |Cells |
++------+-------------------------+----------------+------+
+|1     |top                      |                |  8382|
+|2     |  uut_top_key_and_FSM    |top_key_and_FSM |   514|
+|3     |    uut_FSM_5key         |FSM_5key        |   129|
+|4     |    uut_get_5key         |get_5key        |   385|
+|5     |      u_key_amplitude    |key_debounce    |    75|
+|6     |      u_key_duty         |key_debounce_0  |    75|
+|7     |      u_key_frequence    |key_debounce_1  |    77|
+|8     |      u_key_offset       |key_debounce_2  |    76|
+|9     |      u_key_wave         |key_debounce_3  |    82|
+|10    |  uut_top_wave           |top_wave        |  7362|
+|11    |    uut_XADC_to_data     |XADC_to_data    |   602|
+|12    |      uut_XADC_channel_1 |XADC_channel_1  |    26|
+|13    |      uut_bin2BCD        |bin2BCD         |   387|
+|14    |      uut_data_output    |data_output     |    54|
+|15    |      uut_show_high_low  |show_high_low   |   135|
+|16    |        show_high        |show_4_digit    |    34|
+|17    |        uut_convert      |convert         |   101|
+|18    |    uut_pulse            |pulse           |   787|
+|19    |    uut_wave             |wave            |  5973|
+|20    |      uut_select_wave    |select_wave     |     8|
+|21    |      uut_sine_wave      |sine_wave       |  1868|
+|22    |      uut_square_wave    |square_wave     |  2230|
+|23    |      uut_triangle_wave  |triangle_wave   |  1863|
++------+-------------------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:54 . Memory (MB): peak = 945.746 ; gain = 652.270
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:48 . Memory (MB): peak = 945.746 ; gain = 318.113
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:54 . Memory (MB): peak = 945.746 ; gain = 652.270
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1140 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 945.746 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 22 instances were transformed.
+  LDC => LDCE: 22 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+125 Infos, 44 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:01:03 . Memory (MB): peak = 945.746 ; gain = 663.770
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 945.746 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/my_homework/my_vivado_practice/DDSwave_geneator/dds_wave_generator/dds_wave_generator.runs/synth_1/top_dds.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_dds_utilization_synth.rpt -pb top_dds_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jun  5 10:03:18 2024...
