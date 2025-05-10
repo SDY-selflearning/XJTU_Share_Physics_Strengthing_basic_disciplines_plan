@@ -1,4 +1,5 @@
 # XJTU_Share_Physics_Strengthing_basic_disciplines_plan
-感觉自己做的有点复杂化了，但是能够带给大家启发也最好
-永欣师兄的资料来自 https://github.com/HilbertRonAnju/XJTU_Electrical_Engineering_and_Automation.git
-本实验最终视频效果见BiliBili投稿视频 https://www.bilibili.com/video/BV1THVdzXENZ/?vd_source=fea9ecf53e1f388ed295a15bc8663fc3
+感觉自己做的有点复杂化了，但是能够带给大家启发也最好<br>
+永欣师兄的资料来自 https://github.com/HilbertRonAnju/XJTU_Electrical_Engineering_and_Automation.git<br>
+本实验最终视频效果见BiliBili投稿视频:<br>
+https://www.bilibili.com/video/BV1THVdzXENZ/?vd_source=fea9ecf53e1f388ed295a15bc8663fc3
