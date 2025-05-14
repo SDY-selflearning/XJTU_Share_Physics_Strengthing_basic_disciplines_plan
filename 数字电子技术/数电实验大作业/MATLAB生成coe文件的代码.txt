@@ -1,0 +1,17 @@
+t=0:2*pi/2^13:2*pi;  %一个周期2^13=8192个点，根据需要选取合适的点数
+y=0.5*sin(t)+0.5;
+r=ceil(y*(2^10-1)); %将小数转换为整数，ceil是向上取整。此处数据是10bit，DAC0832需要8bit
+fid = fopen('sin.coe','w'); %写到sin.coe文件，用来初始化sin_rom
+fprintf(fid,'MEMORY_INITIALIZATION_RADIX=10;\n');
+fprintf(fid,'MEMORY_INITIALIZATION_VECTOR=\n');
+for i = 1:1:2^13
+fprintf(fid,'%d',r(i));
+if i==2^13
+fprintf(fid,';');
+else
+fprintf(fid,',');
+end
+if i%15==0
+fprintf(fid,'\n');
+end
+end
